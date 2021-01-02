@@ -69,13 +69,14 @@ class AddService extends Component
     public function addAndUpdateService(){
 
         $this->validate();
+        $icon = "";
+        if($this->icon != ''){
+            Storage::delete('storage/'.$this->icon);
+            $icon= $this->icon->store("images/icon", "public");
+        }
 
         if($this->service_id){
             $updateData=Service::findOrfail($this->service_id);
-            if($this->icon !== ''){
-                Storage::delete(asset('storage/'.$this->icon));
-            }
-            $icon= $this->icon->store("images/icon", "public");
             $updateData->update([
                 'title' => $this->title,
                 'description' => $this->description,
@@ -83,7 +84,6 @@ class AddService extends Component
             ]);
         }
         else{
-            $icon= $this->icon->store("images", "public");
             Service::create([
                 'title' => $this->title,
                 'description' => $this->description,
@@ -94,6 +94,9 @@ class AddService extends Component
        $this-> resetInputFields();
        session()->flash('message', 
             $this->service_id ? 'Service Updated Successfully.' : 'Service Created Successfully.');
+        session()->flash('alert-class', 'alert-success');
      return redirect()->to('admin/service');
     }
+
+    
 }

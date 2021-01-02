@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Image;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Slider extends Model
 {
@@ -16,4 +17,12 @@ class Slider extends Model
     */
 
     protected $fillable = ['slider_tilte', 'heading','description','button_text','status'];
+
+     /**
+     * Get all of the post's comments.
+     */
+    public function images()
+    {
+        return $this->morphMany(Image::class, 'imageable');
+    }
 }

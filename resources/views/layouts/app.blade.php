@@ -56,6 +56,11 @@
 
         @livewireScripts
         @stack('scripts')
+        <script type="text/javascript">
+            window.livewire.on('delete', () => {
+                $('#myModal').modal('hide');
+            });
+        </script>
          <!-- ============================================================== -->
     <script src="{{asset('ast/libs/jquery/dist/jquery.min.js')}}"></script>
 

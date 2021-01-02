@@ -16,4 +16,12 @@ class Image extends Model
     */
 
     protected $fillable = ['image_url'];
+
+      /**
+     * Get the parent commentable model (post or video).
+     */
+    public function imageable()
+    {
+        return $this->morphTo();
+    }
 }

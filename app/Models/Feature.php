@@ -14,7 +14,16 @@ class Feature extends Model
     *
     * @var array
     */
-    protected $fillable = ['feature_title', 'status','unit_price','service_id'];
+    protected $fillable = ['feature_title','status','unit_price','service_id'];
+
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'status' => 'boolean',
+    ];
 
     /**
      * 
