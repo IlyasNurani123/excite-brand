@@ -3,7 +3,7 @@
         <div class="col-12 d-flex no-block align-items-center">
             <h4 class="page-title">Projects</h4>
             <div class="ml-auto text-right">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createProject">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
                     Create Portfolio
                 </button>
             </div>
@@ -42,7 +42,7 @@
                   <td>{{$project->project_type}}</td>
                   <td>{{$project->url}}</td>
                   <td><img src="{{asset('storage/'.$project->project_image)}}" height="100" width="100" alt="{{$project->project_name}}"></td>
-                  <td><span class="mdi  mdi-pencil  hover:bg-blue-600 btn btn-primary" data-toggle="modal" data-target="#createProject" wire:click="edit({{$project->id}})"></span>
+                  <td><span class="mdi  mdi-pencil  hover:bg-blue-600 btn btn-primary" data-toggle="modal" data-target="#formModal" wire:click="edit({{$project->id}})"></span>
                     <span class="mdi  mdi-delete  hover:bg-blue-600 btn btn-danger" wire:click="delete({{$project->id}})"></span>
                   </td>
                 </tr>
@@ -51,10 +51,3 @@
             </table>
         </div>
 </div>
-@push('scripts')
-<script type="text/javascript">
-    window.livewire.on('projectStore', () => {
-        $('#createProject').modal('hide');
-    });
-</script> 
-@endpush

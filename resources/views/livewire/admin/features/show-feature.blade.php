@@ -3,7 +3,7 @@
         <div class="col-12 d-flex no-block align-items-center">
             <h4 class="page-title">Feature</h4>
             <div class="ml-auto text-right">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createFeature">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
                     Create Feature
                 </button>
             </div>
@@ -44,7 +44,7 @@
               <td>{{$feature->unit_price}}</td>
               <td><input type="checkbox" name="status[]" value="{{ $feature->id }}" 
                 {{ $feature->status ? 'checked' : '' }}></td>
-              <td><span class="mdi  mdi-pencil  hover:bg-blue-600 btn btn-primary" data-toggle="modal" data-target="#createFeature" wire:click="$emit('onEdit',{{$feature->id}})"></span>
+              <td><span class="mdi  mdi-pencil  hover:bg-blue-600 btn btn-primary" data-toggle="modal" data-target="#formModal" wire:click="$emit('onEdit',{{$feature->id}})"></span>
                 <button wire:click="selectItems({{$feature->id}},'deleteFeature')" class="mdi  mdi-delete  hover:bg-blue-600 btn btn-danger" data-toggle="modal" data-target="#myModal" ></button>
               </td>
             </tr>
@@ -53,11 +53,3 @@
         </table>
     </div>
 </div>
-
-@push('scripts')
-<script type="text/javascript">
-    window.livewire.on('refreshPage', () => {
-        $('#createFeature').modal('hide');
-    });
-</script> 
-@endpush

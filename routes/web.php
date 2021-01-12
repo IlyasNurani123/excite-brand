@@ -3,6 +3,9 @@
 use App\Http\Livewire\Admin\Project;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Admin\Dashboard;
+use App\Http\Livewire\UserInterface\Index;
+use App\Http\Livewire\UserInterface\ContactUs;
+use App\Http\Livewire\UserInterface\WhoWeAre\AboutUs;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +18,11 @@ use App\Http\Livewire\Admin\Dashboard;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('project');
 
+Route::get('/',Index::class)->name('index');
+
+Route::get('/contact-us', ContactUs::class)->name('contact-us');
+Route::get('/who-we-are', AboutUs::class)->name('who-we-are');
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
 // })->name('dashboard');

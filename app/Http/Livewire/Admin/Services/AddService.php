@@ -14,7 +14,10 @@ class AddService extends Component
 
     public  $service,$title,$description,$icon,$service_id;
 
+
     public function mount(Service $service){
+
+       
 
         $this->service = null;
        
@@ -70,7 +73,7 @@ class AddService extends Component
 
         $this->validate();
         $icon = "";
-        if($this->icon != ''){
+        if(!empty($this->icon)){
             Storage::delete('storage/'.$this->icon);
             $icon= $this->icon->store("images/icon", "public");
         }
@@ -90,7 +93,7 @@ class AddService extends Component
                 'icon' => $icon
             ]);
         }
-        
+        $this->emitUp('serviceAdded');
        $this-> resetInputFields();
        session()->flash('message', 
             $this->service_id ? 'Service Updated Successfully.' : 'Service Created Successfully.');

@@ -14,5 +14,12 @@ class Tag extends Model
     * @var array
     */
 
-    protected $fillable = ['tag_name'];
+    protected $fillable = ['title'];
+   /**
+     * Get the parent commentable model (post or video).
+     */
+    public function taggable()
+    {
+        return $this->morphTo();
+    }
 }

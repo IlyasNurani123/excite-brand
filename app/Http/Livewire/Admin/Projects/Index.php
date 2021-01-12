@@ -61,7 +61,7 @@ class Index extends Component
             'project_description' => $this->project_description,
             'project_image' => $project_img,
         ]);
-        $this->emit('projectStore');
+        $this->emit('closeModalEvent');
         session()->flash('message', 
             $this->project_id ? 'Portfolio Updated Successfully.' : 'Portfolio Created Successfully.');
   

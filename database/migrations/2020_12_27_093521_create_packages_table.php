@@ -18,6 +18,7 @@ class CreatePackagesTable extends Migration
             $table->string('package_title');
             $table->string('stripe_id', 250)->nullable();
             $table->enum('recurring_period',['year', 'month', 'day'])->default('month');
+            $table->float('pricing');
             $table->boolean('status')->default(true);
             $table->timestamps();
         });

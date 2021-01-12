@@ -14,7 +14,7 @@ class FeedBack extends Model
     * @var array
     */
 
-    protected $fillable = ['name', 'email','review','rating','user_id'];
+    protected $fillable = ['name','review','rating','link'];
 
     /**
      * 

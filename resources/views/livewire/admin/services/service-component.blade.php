@@ -26,8 +26,8 @@
         <img class="card-img-top" src="{{asset('storage/'.$service->icon)}}" height="100" width="100" alt="{{$service->title}}">
         <div class="card-body">
           <h5 class="card-title">{{$service->title}}</h5>
-          <p class="card-text">{{Illuminate\Support\Str::limit($service->description, 50) }}</p>
-        <div class="flex-column">
+          <p class="card-text">{!! Illuminate\Support\Str::limit($service->description, 50) !!}</p>
+          <div class="flex-column">
           <a href="#" class="btn btn-secondary mr-2 btn-sm">more</a>
           <a href="{{route('service.edit',['service' => $service->id])}}" class="btn btn-primary btn-sm">edit</a>
           {{-- <a href="{{route('service.delete',['id' => $service->id])}}" class="btn btn-primary btn-sm">delete</a> --}}

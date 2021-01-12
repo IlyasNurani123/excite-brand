@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Tag;
+use App\Models\Image;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Post extends Model
 {
@@ -14,5 +16,22 @@ class Post extends Model
     * @var array
     */
 
-    protected $fillable = ['post_tilte','tag','article','publish_date','icon',];
+    protected $fillable = ['post_title','article','user_id','status'];
+
+
+     /**
+     * Get all of the post's comments.
+     */
+    public function images()
+    {
+        return $this->morphMany(Image::class, 'imageable');
+    }
+
+     /**
+     * Get all of the post's comments.
+     */
+    public function tags()
+    {
+        return $this->morphMany(Tag::class, 'taggable');
+    }
 }

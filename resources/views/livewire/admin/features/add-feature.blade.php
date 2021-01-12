@@ -1,4 +1,4 @@
-<div wire:ignore.self class="modal fade" id="createFeature" tabindex="-1" role="dialog" aria-labelledby="createFeatureLabel" aria-hidden="true">
+<div wire:ignore.self class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="createFeatureLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">

@@ -12,7 +12,6 @@ class AddFeature extends Component
 
     protected $listeners = [
         'onEdit'=> 'edit',
-        'onDelette' => 'deleteFeature'
     ];
 
     public function render()
@@ -54,6 +53,7 @@ class AddFeature extends Component
             'service_id' => $this->service_id,
             'status' => $this->status,
         ]);
+        $this->emit('closeModelEvent');
         $this->emit('refreshPage');
         session()->flash('message', 
         $this->feature_id ? 'Feature Updated Successfully.' : 'Feature Created Successfully.');
