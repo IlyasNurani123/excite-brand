@@ -11,7 +11,7 @@
                 specialty is Social Media Marketing & Management, Digital Marketing, Web Design/Development & Mobile App
                 Development. We will create, optimize and manage your face in the digital world.</p>
         </div>
-        <div class="content-wrapper-define-design ">
+        <div class="content-wrapper-define-design">
             <div class="row">
                 <div class="col-sm-12 col-md-5 col-lg-5 offset-md-1 offset-lg-1">
                     <div class="define-wrapper">

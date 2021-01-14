@@ -1,7 +1,7 @@
 <section id="newsletter">
-    <div class="container">
+    <div class="container my-4 p-4">
         <div class="card newsletter-card">
-            <div class="card-body">
+            <div class="card-body my-4">
                 <div class="row newsletter-row">
                     <div class="col-sm-12 col-md-6 col-lg-6 pl-5">
                         <h2 class="newsletter-title">Subscribe Now To Our Newsletter</h2>
@@ -10,8 +10,8 @@
                     <div class="col-sm-12 col-md-6 col-lg-6 pr-5">
                         <form>
                             <div class="form-group row">
-                                <input type="text" class="form-control" id="formGroupExampleInput"
-                                    placeholder="Your Name*">
+                                <input type="email" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Your email*">
                             </div>
                             <div class="form-group">
                                 <button class="newsletter-form-submit-btn" type="submit">Subscribe</button>

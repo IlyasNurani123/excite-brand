@@ -1,7 +1,7 @@
 <section id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-md-3 col-col-lg-3">
+            <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="about-company-footer">
                     <h5 class="logo"><span class="excite-brand">EB</span>
                         Excitebrand
@@ -14,7 +14,7 @@
                 <div class="footer-socil-media-icon">
                     <div class="footer-icon">
                         <span><a href="#"> <i class="fa fa-facebook text-center" aria-hidden="true"></i></a></span>
-                        <span><a href="#"></a><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                        <span><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
                         <span><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                     <p class="bottom-footer-text">©2020ExciteBrand</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 col-col-lg-3">
+            <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="address-details">
                     <div class="address-detail-header">
                         <h5 class="office-uk"><span class="excite-brand">UK</span> Office</h5>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 col-col-lg-3">
+            <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="address-details">
                     <div class="address-detail-header">
                         <h5 class="office-uk"><span class="excite-brand">Canda</span> Office</h5>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 col-col-lg-3">
+            <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="address-details">
                     <div class="address-detail-header">
                         <h5 class="office-uk"><span class="excite-brand">USA</span> Office</h5>

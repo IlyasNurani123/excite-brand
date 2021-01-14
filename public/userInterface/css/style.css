@@ -65,7 +65,7 @@ p {
 }
 
 .navbar {
-    /* background-color: #E8495E !important; */
+    background-color: #E8495E !important;
 }
 
 .navbar-brand img {
@@ -664,7 +664,7 @@ p {
 }
 
 #contact-us .container {
-    margin: 64px;
+    margin-top: 64px;
 }
 
 #contact-us .card {
@@ -809,7 +809,10 @@ p {
 }
 
 #newsletter .card {
+    margin-top: 20px;
     border-color: #fff;
+    border-radius: 11px;
+    box-shadow: 2px 2px 2px #FBFBFB;
     display: flex;
     justify-content: center;
 }
@@ -866,17 +869,17 @@ p {
 }
 
 #footer h5 {
-    font-family: 'Rubik';
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
     color: #FF7300;
 }
 
 .office-uk {
     font-size: 18px;
-    line-height: 30p
+    line-height: 30px
 }
 
 #footer p {
@@ -948,6 +951,10 @@ p {
     font-weight: 500;
     font-size: 38px;
     line-height: 47px;
+    text-decoration-line: underline;
+    text-decoration-thickness: -5px;
+    text-underline-position: under;
+    text-decoration-color: #FF7300;
     text-align: center;
     color: #FFFFFF;
 }
@@ -1001,8 +1008,22 @@ p {
     left: -53px;
 }
 
+.what-we-do-icon {
+    padding-left: 1rem;
+    position: absolute;
+    top: -30px;
+    left: -90px;
+}
+
+.what-we-do-icon-dp {
+    padding-left: 1rem;
+    position: absolute;
+    top: -23px;
+    left: -64px;
+}
+
 .why-excite-brand {
-    margin: 40px;
+    /* margin: 6px 40px 40px; */
     position: relative;
 }
 
@@ -1048,6 +1069,13 @@ p {
     border-radius: 0 0 2px 2px;
     background-clip: padding-box;
     box-sizing: border-box;
+}
+
+#why-excite-brand h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
 }
 
 .dpm-title {
@@ -1128,3 +1156,238 @@ p {
 .group-image {
     margin: 52px;
 }
+
+
+/********************************************************************************** We Develop************/
+
+#we-ddps-features {
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.we-make-brand-caption h6 {
+    font-weight: 600;
+}
+
+.we-develop-row-wrapper {
+    padding-top: 40px;
+}
+
+.web-development {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.we-devlop-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.web-develop-title {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 51px
+}
+
+.web-development-description {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.image-rectangle-298-dev {
+    position: absolute;
+    top: 8%;
+    z-index: -1;
+    left: 36.59px;
+}
+
+.image-rectangle-298-1-dev {
+    position: absolute;
+    top: 54%;
+    right: 39px;
+    z-index: -1
+}
+
+.image-rectangle-298-2-dev {
+    position: absolute;
+    bottom: 20%;
+    left: 39px;
+    z-index: -1;
+}
+
+.image-Rectangle-299-dev {
+    position: absolute;
+    right: 39.59px;
+    top: 24%;
+    z-index: -1;
+}
+
+.image-Rectangle-299-1-dev {
+    position: absolute;
+    left: 39px;
+    top: 42%;
+    z-index: -1;
+}
+
+.image-Rectangle-299-2-dev {
+    position: absolute;
+    bottom: 4%;
+    right: 39px;
+    z-index: -1;
+}
+
+.stylin-email-and-contact-no {
+    color: #FF7300;
+    font-family: bold;
+    padding: 2px
+}
+
+
+/* .image-rectangle-299-2 {
+   
+} */
+
+
+/* .we-develop-row-wrapper {
+    margin: 3rem;
+} */
+
+
+/***************************************************************** Seo services  */
+
+#seo-feature .card {
+    margin: 30px 0;
+    padding: 20px;
+    width: 336px;
+    border: none;
+    background: #FBFBFB;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+}
+
+.row-wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-body-wrapper {
+    padding: 30px;
+}
+
+.card-effect {
+    transition: transform .2s;
+}
+
+.card-effect:hover {
+    transform: scale(1.05);
+}
+
+#seo-feature .card .card-footer {
+    background-color: #FBFBFB;
+    border-top: 0px;
+    text-align: center;
+}
+
+.seo-services-title {
+    padding: 20px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    /* or 136% */
+    color: #04273C;
+}
+
+.seo-services-description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* or 122% */
+    color: #5C5C5C;
+}
+
+.seo-btn-services {
+    border: 1px solid #FF7300;
+    background: #FF7300;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    /* or 112% */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 20px 20px;
+}
+
+
+/* ************************************************* media Query */
+
+@media all and (min-width: 380px) {
+    .navbar .dropdown-menu {
+        background: #E8495E;
+    }
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .nav-item:hover .nav-link {
+        color: #ffffff;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+        background: lightskyblue;
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+    .navbar .dropdown-menu .dropdown-item:hover {
+        background: lightskyblue;
+    }
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+#sub-dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: lightskyblue;
+    margin-left: 178px;
+    margin-top: -26px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    transition: all 0.25s ease-in-out;
+    background: lightskyblue;
+}
+
+.dropdown .dropdown-menu a:hover {
+    background: #E8495E;
+    color: #ffffff;
+}
+
+#sub-dropdown:hover #sub-dropdown-menu {
+    display: block;
+}
+
+
+/* **************************  Carosul Seo Services */
