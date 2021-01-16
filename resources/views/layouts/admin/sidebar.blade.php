@@ -71,9 +71,9 @@
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                         href="{{ route('logo') }}" aria-expanded="false"><i class="mdi mdi-relative-scale"></i><span
                             class="hide-menu">Logo</span></a></li>
-                <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark"
-                        href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-face"></i><span
-                            class="hide-menu">Icons </span></a>
+                {{-- <li class="sidebar-item"> <a
+                        class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)"
+                        aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Icons </span></a>
                     <ul aria-expanded="false" class="collapse  first-level">
                         <li class="sidebar-item"><a href="icon-material.html" class="sidebar-link"><i
                                     class="mdi mdi-emoticon"></i><span class="hide-menu"> Material Icons </span></a>
@@ -82,10 +82,10 @@
                                     class="mdi mdi-emoticon-cool"></i><span class="hide-menu"> Font Awesome Icons
                                 </span></a></li>
                     </ul>
-                </li>
+                </li> --}}
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="pages-elements.html" aria-expanded="false"><i class="mdi mdi-pencil"></i><span
-                            class="hide-menu">Elements</span></a></li>
+                        href="{{ route('banner') }}" aria-expanded="false"><i class="mdi mdi-pencil"></i><span
+                            class="hide-menu">Banners</span></a></li>
 
             </ul>
         </nav>

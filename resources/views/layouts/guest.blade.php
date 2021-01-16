@@ -55,7 +55,6 @@
     @stack('scripts')
 
 
-    --}}
 </body>
 
 </html>

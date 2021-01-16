@@ -9,9 +9,14 @@ use Illuminate\Support\Facades\Auth;
 
 class AddPost extends Component
 {
-    public $post_id,$post_title,$article,
-           $user_id,$tag_title,$post_image,$status,
-           $tag_id;
+    public $post_id;
+    public $post_title;
+    public $article;
+    public $user_id;
+    public $tag_title;
+    public $post_image;
+    public $status;
+    public $tag_id;
 
 
     public function render()
@@ -90,7 +95,6 @@ class AddPost extends Component
         $post = Post::get()->last();
             if(!empty($post)){
                 $post->tags()->create(['id' => $this->tag_id], [
-                    // dd($this->tag_title),
                     'title' => $this->tag_title,
                 ]);
             }

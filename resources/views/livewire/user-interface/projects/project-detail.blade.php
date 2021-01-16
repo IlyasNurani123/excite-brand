@@ -18,101 +18,110 @@
             </div>
         </div>
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" class="text-danger" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="our-work-grid-wrapper">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active active">
-                    <div class="our-work-grid-container">
-                        <div class="grid-column-1 grid-column">
-                            <div class="grid-item item1">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                                    <div class="overlay">
-                                        <h2>Hover effect 3</h2>
-                                        <a class="info" href="#">link here</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item item2">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                                    <div class="overlay">
-                                        <h2>Hover effect 3</h2>
-                                        <a class="info" href="#">link here</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item item3">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                                    <div class="overlay">
-                                        <h2>Hover effect 3</h2>
-                                        <a class="info" href="#">link here</a>
-                                    </div>
-                                </div>
+
+    <div class="container">
+
+        <div class=" our-work-grid-wrapper">
+            <div class="our-work-grid-container text-center">
+                <div class="row py-3">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 offset-md-1 offset-lg-1 ">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
+                            <div class="overlay">
+                                <h2>Hover effect 3</h2>
+                                <a class="info" href="#">link here</a>
                             </div>
                         </div>
-                        <div class="grid-column-2 grid-column">
-                            <div class="grid-item item1">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                    <div class="overlay">
-                                        <h2>Hover effect 3</h2>
-                                        <a class="info" href="#">link here</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item item2">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                    <div class="overlay">
-                                        <h2>Hover effect 3</h2>
-                                        <a class="info" href="#">link here</a>
-                                    </div>
-                                </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
+                            <div class="overlay">
+                                <h2>Hover effect 3</h2>
+                                <a class="info" href="#">link here</a>
                             </div>
                         </div>
-                        <div class="grid-column-3 grid-column">
-                            <div class="grid-item item1">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                    <div class="overlay">
-                                        <h2>Hover effect 3</h2>
-                                        <a class="info" href="#">link here</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item item2">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                    <div class="overlay">
-                                        <h2>Hover effect 3</h2>
-                                        <a class="info" href="#">link here</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item item3">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-                                    <div class="overlay">
-                                        <h2>Hover effect 3</h2>
-                                        <a class="info" href="#">link here</a>
-                                    </div>
-                                </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
+                            <div class="overlay">
+                                <h2>Hover effect 3</h2>
+                                <a class="info" href="#">link here</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="row py-3">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 offset-md-1 offset-lg-1">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
+                            <div class="overlay">
+                                <h2>Hover effect 3</h2>
+                                <a class="info" href="#">link here</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
+                            <div class="overlay">
+                                <h2>Hover effect 3</h2>
+                                <a class="info" href="#">link here</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
+                            <div class="overlay">
+                                <h2>Hover effect 3</h2>
+                                <a class="info" href="#">link here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 offset-md-1 offset-lg-1">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
+                            <div class="overlay">
+                                <h2>Hover effect 3</h2>
+                                <a class="info" href="#">link here</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
+                            <div class="overlay">
+                                <h2>Hover effect 3</h2>
+                                <a class="info" href="#">link here</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
+                            <div class="overlay">
+                                <h2>Hover effect 3</h2>
+                                <a class="info" href="#">link here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- test file --}}
+
             </div>
-        </div>
-        <div class="grid-bottom-image-wrapper">
-            <img src="{{ asset('images/rectangle-bottom-portfolio.png') }}" class="grid-bottom-image" />
         </div>
     </div>
 </section>

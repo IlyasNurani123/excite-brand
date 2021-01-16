@@ -7,12 +7,14 @@ return [
      * You may use "log" or "null" to prevent calling the
      * API directly from your environment.
      */
-    'driver' => env('MAILCHIMP_DRIVER', 'api'),
+    // 'driver' => env('MAILCHIMP_DRIVER', 'api'),
 
     /*
      * The API key of a MailChimp account. You can find yours at
      * https://us10.admin.mailchimp.com/account/api-key-popup/.
      */
+
+    
     'apiKey' => env('MAILCHIMP_APIKEY'),
 
     /*
@@ -46,6 +48,6 @@ return [
     /*
      * If you're having trouble with https connections, set this to false.
      */
-    'ssl' => true,
+    'ssl' => false,
 
 ];

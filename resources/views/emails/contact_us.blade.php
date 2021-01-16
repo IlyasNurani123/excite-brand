@@ -1,4 +1,11 @@
-<p>Name:{{ $contact_form->name }},<br></p>
-<p>Email:{{ $contact_form->email }},<br></p>
-<p>{{ $contact_form->message }},<br></p>
-<p>Regard: {{ $contact_form->name }} {{ $contact_form->last_name }}</p>
+<p>This is mail template</p>
+
+<p>{{ $data['full_name'] }}</p><br>
+<p>{{ $data['email'] }}</p><br>
+<p>{{ $data['contact_no'] }}</p><br>
+<p>{{ $data['message'] }}</p><br>
+
+<p>Thank you for contact us</p>
+
+
+<p>this is test email just c</p>

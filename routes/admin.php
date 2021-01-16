@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Livewire\Admin\Banners;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Admin\Dashboard;
 use App\Http\Livewire\Admin\DeleteModal;
@@ -54,6 +55,7 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('/testimonial/create', AddTestimonial::class)->name('add.testimonial');
         Route::get('/posts',ShowPost::class)->name('show.post');
         Route::get('/post/create',AddPost::class)->name('add.post');
+        Route::get('/banner',Banners::class)->name('banner');
     });
 
 });

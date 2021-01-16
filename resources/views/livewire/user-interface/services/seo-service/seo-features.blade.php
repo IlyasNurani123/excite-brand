@@ -1,7 +1,6 @@
 <section id="seo-feature">
-    <div class="row-wrapper">
+    <div class="row-wrapper-seo-feature">
         <div class="row">
-
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="card card-effect px-4">
                     <div class="card-body card-body-wrapper">
@@ -52,12 +51,10 @@
                     </div>
                 </div>
             </div>
-
-            {{-- row end --}}
         </div>
     </div>
     <div class="seo-services-button text-center">
-        <a href="#" type="button" class="btn seo-btn-services">Get Your Free Strategy Pack</a>
+        <a href="#" type="button" class="btn seo-btn-services">Get Page 1 Results On Google</a>
     </div>
 
 </section>

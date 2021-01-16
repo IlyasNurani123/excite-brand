@@ -5,6 +5,7 @@
     @livewire('user-interface.projects.project-detail')
     @livewire('user-interface.services.service')
     @livewire('user-interface.testimonial')
-    @livewire('user-interface.contact-us.contact-us')
+    @livewire('user-interface.contact-us.contact-us-component')
+
     @livewire('user-interface.newsletters')
 </div>

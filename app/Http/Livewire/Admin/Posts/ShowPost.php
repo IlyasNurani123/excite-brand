@@ -11,10 +11,8 @@ class ShowPost extends Component
 
     public function render()
     {
-       $posts = Post::with('tags')->get();
-        dd($posts);
-        return view('livewire.admin.posts.show-post',
-        ['posts'=> Post::with('tags')->get()])->slot('main');
+       $posts = Post::all();
+        return view('livewire.admin.posts.show-post',compact('posts'))->slot('main');
     }
 
     public function selectItems($itemId,$action){

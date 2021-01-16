@@ -3,24 +3,43 @@
 namespace App\Http\Livewire\UserInterface;
 
 use Livewire\Component;
-use Spatie\Newsletter\Newsletter;
+use Newsletter;;
+
+
 
 class Newsletters extends Component
 {
+
+    public $email;
+
     public function render()
     {
         return view('livewire.user-interface.newsletters')->slot('main');
     }
 
+
+    public function resetField(){
+        $this->email ="";
+    }
+
+    protected $rules = [
+        'email' => 'required|email',
+    ];
+
     public function suscribeNewsletter(){
+       
+        $this->validate();
 
         if ( ! Newsletter::isSubscribed($this->email) ) 
         {
             Newsletter::subscribePending($this->email);
 
-             return redirect()->to('admin/user-interface.newsletters')->with('success','suscribed');
+            session()->flash('message','suscribed.');
+            session()->flash('alert-class', 'alert-success');
+            $this->resetField();
         }
-        return redirect()->to('admin/user-interface.newsletters')->with('fail','suscribe failed');
+        session()->flash('message','suscribe failed');
+        session()->flash('alert-class', 'alert-danger');
             
     }
 }

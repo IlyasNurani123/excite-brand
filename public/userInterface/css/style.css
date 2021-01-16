@@ -102,8 +102,7 @@ p {
 }
 
 .happy-client {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 40px;
 }
 
 .happy-client-icon {
@@ -115,14 +114,13 @@ p {
     border-style: solid;
     border-radius: 50%;
     background-color: rgb(232, 124, 124);
-    margin-top: 70px;
-    margin-bottom: 20px;
 }
 
-.happy-client-text {
+
+/* .happy-client-text {
     margin-top: 60px;
     margin-left: 40px;
-}
+} */
 
 .happy-client-text h4 {
     font-size: 24px;
@@ -211,118 +209,16 @@ p {
 /* ****************************** Our work ***************************************/
 
 
-/* #our-portfolio {
-    background-color: #D8132d;
-    background-image: url('../../images/service-bg.png');
-    background-repeat: no-repeat;
-    background-size: auto auto;
-    margin-top: 10%;
-    height: 300px;
-}
-
-.our-work {
-    text-align: center;
-    justify-content: center;
-    padding-top: 100px;
-} */
-
-
-/* .rectangle1-image {
-    position: absolute;
-    top: 30px;
-} */
-
-
-/* .our-work h1 {
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.our-work p {
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-}
-
-
-
-.service-col {
-    display: block;
-} */
-
-
-/* ********************************** Grid ****************************** */
-
-
-/* 
-.grid-container {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, minmax(210px, 250px));
-    grid-template-rows: repeat(3, 200px);
-    grid-gap: 10px;
-    /* background-color: #2196F3; */
-
-
-/* padding: 10px; */
-
-
-/* } */
-
-
-/* 
-.item2 {
-    height: 285px;
-}
-
-.item5 {
-    margin-top: 90px;
-    height: 320px;
-}
-
-.item8 {
-    grid-column-start: 3;
-}
-
-.carousel-control-prev {
-    margin-top: -20%;
-}
-
-.carousel-control-next {
-    margin-top: -20%;
-    margin-left: 30px;
-}
-
-.fa.fa-long-arrow-left {
-    font-size: 20px;
-    color: black;
-    padding: 5px;
-    text-align: start;
-    margin-right: 130px;
-    border: 2px solid red;
-    border-radius: 50%;
-}
-
-.fa.fa-long-arrow-right {
-    font-size: 20px;
-    color: black;
-    padding: 5px;
-    text-align: start;
-    margin-left: 130px;
-    border: 2px solid red;
-    border-radius: 50%;
-}  */
-
-
 /* ************************************  services *********************************/
 
 .page-wrapper {
     overflow: hidden;
 }
 
-#our-service {
+
+/* #our-service {
     margin-top: 5%;
-}
+} */
 
 .service-image {
     height: 450px;
@@ -429,7 +325,7 @@ p {
 
 .our-work-grid-wrapper {
     width: 100%;
-    height: 780px;
+    height: 550px;
     background-color: #FFFFFF;
     position: relative;
     display: flex;
@@ -437,62 +333,18 @@ p {
 }
 
 .our-work-grid-container {
-    height: 844px;
-    width: 100%;
-    display: flex;
-    grid-gap: 23px;
-    justify-content: center;
-    /* position: absolute; */
-    /* z-index: 2; */
-    /* top: -150px; */
-}
-
-.grid-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.grid-item {
-    width: 312px;
-    height: 266px;
-    background-color: gray;
-}
-
-.grid-column-2 .grid-item {
-    width: 316px;
-    height: 405px;
-}
-
-.grid-bottom-image-wrapper {
     position: absolute;
-    right: -30px;
-    bottom: 0;
-    z-index: 1;
-    width: 314px;
-    height: 314px;
+    left: 0;
+    right: 0;
+    top: -140px;
+    padding-left: 80px;
 }
 
-#portfolio-container .carousel-inner {
-    position: absolute;
-    width: 100%;
-    top: -150px;
-    z-index: 2;
-}
 
-#portfolio-container .carousel-item {
-    display: flex;
-    justify-content: center;
-}
-
-#portfolio-container .carousel-item.active {
-    display: flex;
-}
-
-.carousel-indicators li {
-    border: 2px #DF2A38 solid;
-    border-radius: 4px;
-}
+/* .portfolio-container .container {
+    margin: 0 50px;
+    padding: 0 50px;
+} */
 
 
 /************************************************* Hover effect *************************/
@@ -586,7 +438,6 @@ p {
 #testimonial {
     width: 100%;
     height: 700px;
-    /* background-image: url('../../images/testimonial-bg.png'); */
     background-image: linear-gradient(180deg, #4243A9 0%, #2B2C8B 39.16%, #282985 61.98%, #24257C 100%);
     ;
 }
@@ -671,6 +522,7 @@ p {
     background: linear-gradient(124.59deg, #22BAFF 26.16%, #65CEFF 93.46%);
     box-shadow: 7px 2px 18px rgba(2, 147, 235, 0.35);
     border-radius: 19px;
+    width: 95%;
 }
 
 #contact-us .card-body {
@@ -748,10 +600,6 @@ p {
     margin-top: 1.5rem
 }
 
-#contact-us-form {
-    margin: 64px 35px;
-}
-
 .contact-us-form-header h1 {
     font-family: 'Roboto';
     font-style: normal;
@@ -818,19 +666,19 @@ p {
 }
 
 #newsletter h2 {
-    font-family: 'Rubik';
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 35px;
     line-height: 45px;
     color: #FF7300;
 }
 
 #newsletter p {
-    font-family: 'Rubik';
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 30px;
     display: flex;
     align-items: center;
@@ -838,11 +686,11 @@ p {
 }
 
 .newsletter-form-submit-btn {
-    width: 250px;
-    height: 50px;
+    width: 120px;
+    height: 38px;
     background: linear-gradient(180deg, #FF7300 0%, rgba(226, 111, 17, 0.92) 100%);
     border-radius: 10px;
-    font-family: 'Rubik';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -1274,10 +1122,13 @@ p {
     border-radius: 15px;
 }
 
-.row-wrapper {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
+.row-wrapper-seo-feature {
+    margin-top: 20px;
+    padding-right: 25px;
+    padding-left: 6rem;
+    margin-right: 25px;
+    margin-left: 25px;
+    align-items: 'center';
 }
 
 .card-body-wrapper {
@@ -1333,6 +1184,93 @@ p {
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 20px 20px;
+}
+
+#our-expertise .container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.our-expertise-icon-title h5 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: justify !important;
+    padding: 4px;
+    color: #000000;
+}
+
+.icon-about-resource {
+    padding-top: 30px;
+}
+
+.icon-box {
+    /* width: 210px;
+    height: 56px; */
+    background: #F2F2F2;
+    box-shadow: 0px 4px 15px rgba(29, 29, 29, 0.07);
+    border-radius: 8px;
+}
+
+.customer-love-us {
+    background: #F2F2F2;
+    margin-top: 60px;
+    padding: 70px;
+}
+
+.customer-love-us-icon-box {
+    width: 152px;
+    height: 144px;
+    border: 1px solid #FF7300;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.love-us-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.customer-love-us h3 {
+    text-align: center !important;
+    columns: #0000;
+    padding-top: 4px;
+}
+
+.container-about-happy-client {
+    background-color: #F2F2F2;
+}
+
+.boost-your-site-box {
+    background: rgba(255, 242, 232, 0.9);
+    box-shadow: 0px 18px 140px 12px rgba(255, 115, 0, 0.1);
+    border-radius: 10px;
+}
+
+.boost-title {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.045em;
+    color: #04273C;
+    padding: 30px;
+}
+
+
+/******************************************************Let's Talk**************************/
+
+#lets-talk-section {
+    margin-top: 30px;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #F07713;
 }
 
 
@@ -1391,3 +1329,43 @@ p {
 
 
 /* **************************  Carosul Seo Services */
+
+.counter {
+    /* background-color: #f5f5f5; */
+    padding: 20px 0;
+    border: 1px lightgray;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    box-shadow: 0px 70px 160px rgba(232, 230, 230, 0.08);
+    border-radius: 30px;
+    background: #FBFBFB;
+}
+
+.count-title {
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 25px;
+    line-height: 30px;
+    color: #0B132A;
+}
+
+.count-text {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    color: #0B132A;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+}

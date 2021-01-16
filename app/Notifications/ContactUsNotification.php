@@ -7,19 +7,19 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class contactUs extends Notification
+class ContactUsNotification extends Notification
 {
     use Queueable;
-    public ContactLead $lead;
+
+    public $data;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct(ContactLead $lead)
+    public function __construct( $data)
     {
-        $this->lead = $lead;
-        dd( $this->lead = $lead);
+        $this->data = $data;
     }
 
     /**
@@ -42,13 +42,14 @@ class contactUs extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->greeting('hi!')
-                    ->line($this->lead['full_name'])
-                    ->from(".$this->lead['email'].")
-                    ->replyTo(".$this->lead['email'].")
-                    ->line('Contact ' . $this->lead['contact_no'])
-                    ->line($this->lead['message'])
-                    ->line('Thank you for Contacting Us!');
+            ->greeting('hi!')
+            ->subject('Welcome To Excitebrand')
+            ->replyTo(env('MAIL_FROM_ADDRESS'))
+            ->line('Dear ' . $this->data['full_name'])
+            ->line('Welcome to ExciteBrand,.')
+            /*->line('You account is configured and your password is "' . $this->request['password'] . '".')*/
+        /*  ->action('Login Here', url('/'))*/
+            ->line('Thank you for choosing us!');
     }
 
     /**

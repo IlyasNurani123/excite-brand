@@ -3,19 +3,22 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
 
 class ContactUs extends Model
 {
     use HasFactory;
+    use Notifiable;
+    // public ContactLead $lead;
 
-    /**
-    * The attributes that are mass assignable.
-    *
-    * @var array
-    */
+    protected $guarded = [];
 
-    protected $fillable = ['full_name', 'email','contact_no','message'];
+    // public function __construct(ContactLead $lead)
+    // {
+    //     $this->lead = $lead;
+    // }
+    
 
 
 }
