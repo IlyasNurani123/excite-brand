@@ -1,15 +1,19 @@
 <?php
 
 
+
 use App\Http\Livewire\Admin\Banners;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Admin\Dashboard;
 use App\Http\Livewire\Admin\DeleteModal;
 use App\Http\Livewire\Admin\Posts\AddPost;
+use App\Http\Livewire\Admin\Posts\Category;
 use App\Http\Livewire\Admin\Posts\ShowPost;
 use App\Http\Livewire\Admin\Projects\Index;
 use App\Http\Livewire\Admin\Sliders\Slider;
 use App\Http\Livewire\Admin\Logos\LogoImage;
+use App\Http\Livewire\Admin\Posts\TrashIndex;
+use App\Http\Livewire\Admin\Posts\UpdatePost;
 use App\Http\Livewire\Admin\Sliders\AddSlider;
 use App\Http\Livewire\Admin\Services\AddService;
 use App\Http\Livewire\Admin\Features\ShowFeature;
@@ -55,7 +59,11 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('/testimonial/create', AddTestimonial::class)->name('add.testimonial');
         Route::get('/posts',ShowPost::class)->name('show.post');
         Route::get('/post/create',AddPost::class)->name('add.post');
+        Route::get('/posts/edit/{id}', UpdatePost::class)->name('update.post');
         Route::get('/banner',Banners::class)->name('banner');
+        Route::get('/categories',Category::class)->name('category');
+        Route::get('/post/trash',TrashIndex::class)->name('post.trash');
+       
     });
 
 });

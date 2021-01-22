@@ -17,6 +17,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('userInterface/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('userInterface/css/mediaquries.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 
     @livewireStyles
 
@@ -53,7 +55,6 @@
 
     @livewireScripts
     @stack('scripts')
-
 
 </body>
 

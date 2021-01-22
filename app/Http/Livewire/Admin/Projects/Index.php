@@ -12,7 +12,8 @@ class Index extends Component
     public $project_id,$project_name,
             $project_description,
             $project_type,
-            $url,$project_image;
+            $url,$project_image,
+            $iteration;
    
     public function render()
     {
@@ -31,7 +32,7 @@ class Index extends Component
         $this->project_description = '';
         $this->project_type = '';
         $this->url = '';
-        $this->project_image = '';
+        
     }
 
       /**
@@ -47,7 +48,7 @@ class Index extends Component
             'project_type' => 'required|string|max:100',
             'url' => 'nullable|string|max:255',
             'project_description' => 'nullable',
-            'project_image' => 'nullable|image'
+            'project_image' => 'nullable |mimes:jpg, jpeg, png, bmp, gif'
         ]);
 
         $project_img="";
@@ -64,7 +65,9 @@ class Index extends Component
         $this->emit('closeModalEvent');
         session()->flash('message', 
             $this->project_id ? 'Portfolio Updated Successfully.' : 'Portfolio Created Successfully.');
-  
+           
+            $this->project_image =null;
+            $this->iteration++;
         $this->resetInputFields();
     }
 

@@ -16,7 +16,7 @@ class Slider extends Model
     * @var array
     */
 
-    protected $fillable = ['slider_tilte', 'heading','description','button_text','status'];
+    protected $fillable = ['slider_tilte', 'heading','description','button_text','status','slider_image'];
 
      /**
      * Get all of the post's comments.

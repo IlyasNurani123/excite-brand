@@ -1,0 +1,257 @@
+/* ************************************************************************************* */
+
+@media(min-width: 1600px) {
+    #why-excite-brand .card {
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+    #google-h-img {
+        display: none;
+    }
+    #we-do-heading-mob {
+        display: none;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 767px) {
+    /*******************What We Do Section***********************8*/
+    .we-are-a-landing {
+        margin-left: 0%;
+    }
+    .we-are-a-landing h5 {
+        margin-left: 0;
+        text-align: center;
+        line-height: 29px;
+        margin-top: -31px;
+    }
+    .we-are-a-landing h1 {
+        font-size: 225%;
+        text-align: center;
+        line-height: 66px;
+    }
+    .we-are-a-landing p {
+        text-align: center;
+    }
+    .landing-red-more-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #google-v-img {
+        display: none;
+    }
+    #google-h-img {
+        width: 100%;
+        padding: 5%;
+    }
+    #we-do-heading-mob {
+        color: #E2343D;
+        display: flex;
+        justify-content: center;
+        margin-top: -160px;
+        margin-bottom: 10px;
+        font-size: -67px;
+    }
+    .we-do-img {
+        display: none;
+    }
+    .we-do p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    /****************Our Work Section*******************/
+    .our-work-left-image-container {
+        display: none;
+    }
+    .our-work-caption {
+        margin-top: 70px;
+    }
+    #portfolio-container {
+        margin-top: 40px;
+    }
+    .grid-bottom-image-wrapper {
+        display: none;
+    }
+    .main-service-text {
+        margin-top: 29px;
+        margin-bottom: 15px;
+        line-height: 50px;
+    }
+    .service-image {
+        margin-bottom: 20px;
+    }
+    .service-item {
+        text-align: center;
+        line-height: 25px;
+        margin: 15px 0px;
+    }
+    /********************Contact Us Section***********************/
+    #contact-us .card {
+        border-radius: 20px;
+    }
+    #contact-us .container {
+        margin-top: 50px
+    }
+    .our-contact-detail {
+        font-size: 30px;
+    }
+    .contact-detail-captions p {
+        font-size: 18px;
+    }
+    .contact-us-form-header {
+        text-align: center;
+        margin-top: -20px;
+    }
+    .contact-us-form-header h1 {
+        font-size: 30px;
+    }
+    .contact-form-submit-btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+    /* ******************We Make Your Brand********************** */
+    /* *****************Why Excite Brand Section********************* */
+    #why-excite-brand .card {
+        margin: 0px;
+    }
+    /*-----------Happy Client Section-------------*/
+    .happy-client-icon {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-left: -10px;
+    }
+    .happy-client-text {
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+    /**********************Subscribe Section**********************/
+    .newsletter-row {
+        text-align: center;
+    }
+    #newsletter h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    #newsletter p {
+        line-height: 22px;
+    }
+    .newsletter-form-submit-btn {
+        width: 100%;
+    }
+    .newsletter-description {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .newsletter-title {
+        margin-right: 25px;
+    }
+    .newsletter-description {
+        margin-right: 22px;
+        line-height: 0px;
+    }
+    #newsletter .card {
+        margin-top: 0px;
+    }
+    /* ******************We Make Your Brand********************** */
+    /* *****************Why Excite Brand Section********************* */
+    #why-excite-brand .card {
+        margin: 0px;
+    }
+    .design-content {
+        margin-top: 50px;
+    }
+    /* ************************SEO Service************************ */
+    /* ***********Card Section************ */
+    #seo-feature .card {
+        width: 100%;
+    }
+    .row-wrapper-seo-feature {
+        margin-left: 0px;
+        margin-top: 0px;
+        padding-right: 0px;
+    }
+    .seo-btn-services {
+        justify-content: center;
+        padding: 10px;
+    }
+    /* ****************Our SEO Expertise Section********************* */
+    .seo-services-title {
+        padding: 0px;
+        font-size: 19px;
+    }
+    .our-seo-title {
+        font-size: 30px;
+    }
+    .our-experties-icon {
+        display: flex;
+        justify-content: center;
+    }
+    .our-expertise-icon-title h5 {
+        text-align: center !important;
+    }
+    .love-us-container {
+        display: flex;
+        justify-content: center;
+    }
+    .love-us-wrapper {
+        padding: 4px;
+        margin-top: 0px;
+    }
+    .cutomer-love-icon {
+        margin-top: 7px;
+    }
+    .customer-love-us {
+        margin-bottom: 20px;
+    }
+    /* ************Boost Website Section*********** */
+    .boost-your-site-box {
+        margin: 0rem !important;
+        margin-top: 10px;
+    }
+    .boost-title {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 20px;
+    }
+    .boost-your-site-button {
+        margin-bottom: 22px;
+    }
+    /* *******Our Happy Client Section********* */
+    .icon-box {
+        /* margin-bottom: 15px; */
+        /* margin: 15px; */
+    }
+    /*  .icon-box img {
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+        } */
+    /* .our-seo-title {
+            font-size: 25px;
+        }
+        #seo-feature .card {
+            margin: 10px 0px;
+        } */
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .icon-box {
+        margin: 0px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 575px) {
+    .icon-box img {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+    .row-wrapper-seo-feature {
+        text-align: -webkit-center;
+    }
+}

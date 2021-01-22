@@ -8,6 +8,6 @@ class PpcIndex extends Component
 {
     public function render()
     {
-        return view('livewire.user-interface.services.seo-service.ppc-index');
+        return view('livewire.user-interface.services.seo-service.ppc-index')->layout('layouts.guest');
     }
 }

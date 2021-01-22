@@ -1,20 +1,16 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 md-6 text-center">
-            @if (session()->has('message'))
-                <div class="alert {{ Session::get('alert-class') }}" role="alert">
-                    <a href="#" class="close mdi mdi-window-close" data-dismiss="alert" aria-label="close"></a>
-                    <p class="blockquote">{{ session('message') }}</p>
-                </div>
-            @endif
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Services form</h4>
-                    <form class="form-horizontal" wire:submit.prevent="updateOrStoreTestimonial">
+<div wire:ignore.self class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="createFeatureLabel"
+    aria-hidden="true">>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createPackageLabel">Testimonial</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" wire:submit.prevent="updateOrStoreTestimonial">
+                    <div class="card-body">
                         <div class="row">
                             @csrf
                             <div class="col-sm-6 col-md-6 col-lg-6">
@@ -51,14 +47,15 @@
                                 </div>
                             </div>
                         </div>
-                </div>
-                <div class="border-top">
-                    <div class="card-body row">
-                        <div class="col-sm-9 col-md-11 col-lg-11 text-right">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <div class="border-top">
+                        <div class="card-body row">
+                            <div class="col-sm-9 col-md-11 col-lg-11 text-right">
+                                <button wire:loading.attr="disabled" type="submit"
+                                    class="btn btn-primary">Submit</button>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </form>
             </div>
         </div>

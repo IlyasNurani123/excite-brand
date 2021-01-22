@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row m-4">
         <div class="col-12 d-flex no-block align-items-center">
-            <h4 class="page-title">Logos</h4>
+            <h4 class="page-title">Banners</h4>
             <div class="ml-auto text-right">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
                     Add Banner
@@ -26,27 +26,34 @@
             <thead>
                 <tr>
                     <th></th>
-                    <th></th>
                     <th scope="col">Banner Name</th>
-                    <th scope="col">banner</th>
+                    <th scope="col">banner image</th>
                     <th scope="col">Status</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
             @livewire('admin.delete-modal')
             <tbody>
-                @foreach ($banners as $logo)
+                @foreach ($banners as $banner)
                     <tr>
                         <td></td>
-                        <td>{{ $logo->banner_name }}</td>
-                        <td><img src="{{ asset('storage/' . $logo->image) }}" alt="logo" width="300" height="300">
+                        <td>{{ $banner->banner_name }}</td>
+                        <td><img src="{{ asset('storage/' . $banner->image) }}" alt="banner" width="100" height="100">
                         </td>
-                        <td><input type="checkbox" name="status[]" value="{{ $logo->id }}"
-                                {{ $logo->status ? 'checked' : '' }}></td>
+                        <td>
+
+                            <!-- Rounded switch -->
+                            <label class="switch">
+                                <input type="checkbox" name="{{ $banner['status'] }}"
+                                    wire:click="updateStatus({{ $banner->id }},{{ $banner->status }})"
+                                    {{ $banner->status === 1 ? 'checked' : '' }}>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
                         <td>
                             <span class="mdi  mdi-pencil  hover:bg-blue-600 btn btn-primary" data-toggle="modal"
-                                data-target="#formModal" wire:click="$emit('onEdit',{{ $logo->id }})"></span>
-                            <button wire:click="selectItems({{ $logo->id }},'deleteLogo')"
+                                data-target="#formModal" wire:click="$emit('onEdit',{{ $banner->id }})"></span>
+                            <button wire:click="selectItems({{ $banner->id }},'deleteLogo')"
                                 class="mdi  mdi-delete  hover:bg-blue-600 btn btn-danger" data-toggle="modal"
                                 data-target="#myModal"></button>
                         </td>

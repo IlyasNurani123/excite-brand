@@ -6,8 +6,11 @@ use Livewire\Component;
 
 class BlogView extends Component
 {
+   
+
     public function render()
     {
-        return view('livewire.user-interface.blogs.blog-view');
+       
+        return view('livewire.user-interface.blog.blog-view');
     }
 }

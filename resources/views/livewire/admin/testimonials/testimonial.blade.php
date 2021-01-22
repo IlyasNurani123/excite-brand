@@ -3,10 +3,13 @@
         <div class="col-12 d-flex no-block align-items-center">
             <h4 class="page-title">testimonials</h4>
             <div class="ml-auto text-right">
-                <a href="{{ route('add.testimonial') }}" class="font-medium btn btn-primary">Add Service</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
+                    Add Testimonial
+                </button>
             </div>
         </div>
     </div>
+    @livewire('admin.testimonials.add-testimonial')
     <div class="row">
         <div class="col-sm-12 md-8 text-center">
             @if (session()->has('message'))
@@ -38,7 +41,7 @@
                         <td>{{ $testimonial->link }}</td>
                         <td><span class="mdi  mdi-pencil  hover:bg-blue-600 btn btn-primary" data-toggle="modal"
                                 data-target="#formModal" wire:click="$emit('onEdit',{{ $testimonial->id }})"></span>
-                            <button wire:click="selectItems({{ $testimonial->id }},'deleteLogo')"
+                            <button wire:click="selectItems({{ $testimonial->id }},'onDelete')"
                                 class="mdi  mdi-delete  hover:bg-blue-600 btn btn-danger" data-toggle="modal"
                                 data-target="#myModal"></button>
                         </td>

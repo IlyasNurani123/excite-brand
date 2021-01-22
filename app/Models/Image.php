@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Image extends Model
 {
-    use HasFactory;
+    use HasFactory,SoftDeletes;
     
     /**
     * The attributes that are mass assignable.
@@ -16,6 +17,11 @@ class Image extends Model
     */
 
     protected $fillable = ['image_url'];
+
+
+    protected $casts = [
+        'status' => 'boolean',
+    ];
 
       /**
      * Get the parent commentable model (post or video).

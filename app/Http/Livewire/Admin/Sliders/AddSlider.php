@@ -13,7 +13,8 @@ class AddSlider extends Component
     public $slider_id,$slider_title,
             $heading,$description,
             $button_text,$status;
-    public $images = [];
+    public $images;
+    public $iteration;
 
 
     public function render()
@@ -45,43 +46,36 @@ class AddSlider extends Component
         'heading' => 'required|string',
         'description' => 'required|string',
         'button_text' => 'required|string',
-        'images.*' =>'image|max:1024'
+        'images' =>'required|image|max:1024'
     ];
 
     public function UpdateOrAddSlider(){
 
         $this->validate();
-        DB::beginTransaction();
+
         try{
+            $img ="";
+            if(!empty($this->images)){
+                $img= $this->images->store("images/banner", "public");
+            }
            
             $slider=Slider::updateOrCreate(['id' => $this->slider_id], [
                 'slider_tilte' => $this->slider_title,
                 'heading' => $this->heading,
                 'description' => $this->description,
                 'button_text' => $this->button_text,
-                'status' => $this->status
+                'status' => $this->status,
+                'slider_image' => $img
             ]);
-            if(!empty($this->images)){
-
-            foreach ($this->images as $key => $image) {
-                    $this->images[$key] = $image->store('images/slider','public');
-                    }
-                $this->images = json_encode($this->images);
-                $slider->images()->create([
-                    "image_url" => $this->images,
-                    "imageable_id" =>$slider->id
-                ]);
-            }
 
             $this-> resetInputFields();
+            $iteration++;
             session()->flash('message', 
                  $this->slider_id ? 'slider Updated Successfully.' : 'slider Created Successfully.');
              session()->flash('alert-class', 'alert-success');
 
-            DB::commit();
-
         }catch(\Exception $e){
-            DB::rollBack();
+           
             session()->flash('message', $e->getMessage());
             session()->flash('alert-class', 'alert-danger');
         }

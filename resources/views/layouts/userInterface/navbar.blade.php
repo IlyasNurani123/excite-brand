@@ -32,7 +32,7 @@
                                 PROMOTO</a>
                             <ul id="sub-dropdown-menu" class="dropdown-menu">
                                 <li> <a href="{{ route('seo-services') }}" class="dropdown-item">SEO SERVICES</a></li>
-                                <li> <a href="#" class="dropdown-item">PPC AGENCY</a></li>
+                                <li> <a href="{{ route('ppc-agency') }}" class="dropdown-item">PPC AGENCY</a></li>
                             </ul>
                         </li>
                         <li><a href="{{ route('we-support') }}" class="dropdown-item">WE SUPPORT</a></li>
@@ -48,11 +48,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">OUR NEWS & BLOG</a>
+                    <a class="nav-link" href="{{ route('blogs') }}">OUR NEWS & BLOG</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT US</a>
+                    <a class="nav-link" href="{{ route('contact-us') }}">CONTACT US</a>
                 </li>
             </ul>
         </div>

@@ -12,6 +12,7 @@ class CreateLogo extends Component
     public $logo_id;
     public $logo_url;
     public $status;
+    public  $iteration;
     public function render()
     {
         return view('livewire.admin.logos.create-logo');
@@ -60,6 +61,7 @@ class CreateLogo extends Component
         $this->logo_id ? 'Logo Updated Successfully.' : 'Log Created Successfully.');
         session()->flash('alert-class', 'alert-success');
         // return redirect()->to('admin/logo/feature');
+        $this->iteration++;
         $this->resetInputFields();
     }
 

@@ -18,6 +18,10 @@ class AddTestimonial extends Component
         return view('livewire.admin.testimonials.add-testimonial');
     }
 
+
+    protected $listeners = [
+        'onEdit'=> 'edit',
+    ];
        /**
      * The attributes that are mass assignable.
      *

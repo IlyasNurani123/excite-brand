@@ -14,6 +14,7 @@ class Banners extends Component
     public $image;
     public $status;
     public $action;
+    public $iteration;
     public $selectedItem;
     protected $listeners = ["delete" => "onDelete"];
 
@@ -24,6 +25,20 @@ class Banners extends Component
         ]);
     }
 
+
+    public function mount(){
+       
+       
+       
+        if(!empty($this->selectedItem)){
+
+            $banner = Banner::findOrFail($id);
+            $this->image = $banner->image;
+            $this->banner_name = $banner->banner_name;
+            $this->status = $banner->status;
+
+        }
+    }
      /**
      * Validatiion 
      * 
@@ -48,15 +63,18 @@ class Banners extends Component
 
     public function updateOrcreatebanner()
     {
+
         $this->validate();
-        if(!empty($image_id)){
+        if(!empty($banner_id)){
             // Storage::delete('storage/'.$this->icon);
-            $banner= $this->image->store("images/banner", "public");
+            $banner = Banner::findOrfail($this->selectedItem);
+            unlink('storage/'.$banner->image);
+            $banner= $this->image->store("images/", "public");
         }else{
-            $banner= $this->image->store("images/banners", "public");
+            $banner= $this->image->store("images/", "public");
         }
         Banner::updateOrCreate(['id' => $this->banner_id], [
-            'image' => $this->image,
+            'image' => $banner,
             'banner_name' => $this->banner_name,
             'status' => $this->status,
         ]);
@@ -64,7 +82,8 @@ class Banners extends Component
         session()->flash('message', 
         $this->banner_id ? 'banner Updated Successfully.' : 'Log Created Successfully.');
         session()->flash('alert-class', 'alert-success');
-        // return redirect()->to('admin/banner/feature');
+        return redirect()->to('admin/banner');
+        $this->iteration++;
         $this->resetInputFields();
     }
 
@@ -76,19 +95,31 @@ class Banners extends Component
     public function edit($id)
     {
         $banner = Banner::findOrFail($id);
-        $this->banner_url = $banner->banner_url;
+        $this->image = $banner->image;
+        $this->banner_name = $banner->banner_name;
         $this->status = $banner->status;
     }
+
 
     public function selectItems($itemId,$action){
         $this->action = $action;
         $this->selectedItem = $itemId;
    }
+
+   public function updateStatus($id, $status){
+       $banner = Banner::findOrfail($id);
+       $s = $status === 1? 0: 1;
+       $status1= $banner->update([
+           'status' => $s
+       ]);
+   }
+
     public function onDelete(){
-        $service = Service::findOrfail($this->selectedItem);
-        Storage::delete('storage/'.$service->project_image);
-        $service->delete();
-        session()->flash('message', 'service delete successfully');
+
+        $banner = Banner::findOrfail($this->selectedItem);
+        $banner->delete('storage/'.$banner->image);
+        $banner->delete();
+        session()->flash('message', 'banner images delete successfully');
         session()->flash('alert-class', 'alert-danger'); 
     }
 }

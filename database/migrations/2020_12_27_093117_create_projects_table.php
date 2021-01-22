@@ -20,6 +20,7 @@ class CreateProjectsTable extends Migration
             $table->string('project_type');
             $table->string('url')->nullable();
             $table->string('project_image')->nullable();
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }

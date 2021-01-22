@@ -4,11 +4,14 @@ use App\Http\Livewire\Admin\Project;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Admin\Dashboard;
 use App\Http\Livewire\UserInterface\Index;
+use App\Http\Livewire\UserInterface\Blog\BlogIndex;
+use App\Http\Livewire\UserInterface\Blog\PostDetail;
 use App\Http\Livewire\UserInterface\WhoWeAre\AboutUs;
 use App\Http\Livewire\UserInterface\Services\WhatWeDo;
-use App\Http\Livewire\UserInterface\ContactUs\ContactUsComponent;
 use App\Http\Livewire\UserInterface\Services\WebDevelopment;
+use App\Http\Livewire\UserInterface\ContactUs\ContactUsIndex;
 use App\Http\Livewire\UserInterface\Services\WeDesign\WeDesign;
+use App\Http\Livewire\UserInterface\Services\SeoService\PpcIndex;
 use App\Http\Livewire\UserInterface\Services\SeoService\SeoIndex;
 use App\Http\Livewire\UserInterface\Services\Support\SupportIndex;
 use App\Http\Livewire\UserInterface\Services\WePromote\PromoteIndex;
@@ -34,14 +37,11 @@ Route::get('/we-design', WeDesign::class)->name('we-design');
 Route::get('/we-promote', PromoteIndex::class)->name('we-promote');
 Route::get('/we-support', SupportIndex::class)->name('we-support');
 Route::get('/seo-services', SeoIndex::class)->name('seo-services');
-Route::get('/contact-us', ContactUsComponent::class)->name('contact-us');
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return view('dashboard');
-// })->name('dashboard');
+Route::get('/ppc-agency', PpcIndex::class)->name('ppc-agency');
 
-// Route::middleware('auth:sanctum')->group(function () {
 
-//     Route::get('/dashboard', Dashboard::class)->name('dashboard');
-//     Route::get('/project', Project::class)->name('project');
+Route::get('/contact-us',ContactUsIndex::class)->name('contact-us');
 
-// });
+Route::get('/newupdates-blog',BlogIndex::class)->name('blogs');
+Route::get('/newupdates-blog/post/{slug}',PostDetail::class)->name('details');
+

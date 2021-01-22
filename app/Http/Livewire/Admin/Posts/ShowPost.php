@@ -11,9 +11,14 @@ class ShowPost extends Component
 
     public function render()
     {
-       $posts = Post::all();
+       $posts = Post::with('catagory','tags','images')->get();
+      
         return view('livewire.admin.posts.show-post',compact('posts'))->slot('main');
     }
+
+    protected $listeners = [
+        "delete"=> 'onDelete',
+   ];
 
     public function selectItems($itemId,$action){
         $this->action = $action;
@@ -21,9 +26,15 @@ class ShowPost extends Component
    }
 
    public function onDelete(){
+
     $post = Post::findOrfail($this->selectedItem);
     $post->delete();
     session()->flash('message', 'post delete successfully');
     session()->flash('alert-class', 'alert-danger'); 
 }
+
+
+
+
+
 }

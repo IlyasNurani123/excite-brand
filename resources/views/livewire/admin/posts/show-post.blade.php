@@ -3,9 +3,9 @@
         <div class="col-12 d-flex no-block align-items-center">
             <h4 class="page-title">post</h4>
             <div class="ml-auto text-right">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
+                <a href="{{ route('add.post') }}" class="btn btn-primary">
                     Create Post
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -39,14 +39,20 @@
                     <tr>
                         <th scope="row">{{ $post->id }}</th>
                         <td>{{ $post->post_title }}</td>
-                        {{-- <td>{{ $post->tag->tag_title }}</td>
-                        --}}
-                        <td>{!! Illuminate\Support\Str::limit($post->article, 350) !!}</td>
-                        <td><input type="checkbox" name="status[]" value="{{ $post->id }}"
-                                {{ $post->status ? 'checked' : '' }}></td>
-                        <td><span class="mdi  mdi-pencil  hover:bg-blue-600 btn btn-primary" data-target="#formModal"
-                                wire:click="$emit('onEdit',{{ $post->id }})"></span>
-                            <button wire:click="selectItems({{ $post->id }},'deletepost')"
+                        <td>
+                            @foreach ($post->tags as $tag)
+                                {{ $tag->title }}
+                            @endforeach
+                        </td>
+                        <td>{!! Illuminate\Support\Str::limit($post->article, 200) !!}</td>
+                        <td>
+                            <img src="{{ asset('storage/' . $post->feature_image) }}" width="50" height="50">
+                        </td>
+                        <td>{{ $post->status }}</td>
+                        <td>
+                            <a href="{{ route('update.post', ['id' => $post->id]) }}"
+                                class="mdi  mdi-pencil  hover:bg-blue-600 btn btn-primary"></a>
+                            <button wire:click="selectItems({{ $post->id }},'onDelete')"
                                 class="mdi  mdi-delete  hover:bg-blue-600 btn btn-danger" data-toggle="modal"
                                 data-target="#myModal"></button>
                         </td>

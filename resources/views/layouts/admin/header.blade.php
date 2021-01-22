@@ -7,7 +7,7 @@
             <!-- ============================================================== -->
             <!-- Logo -->
             <!-- ============================================================== -->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{{ route('dashboard') }}">
                 <!-- Logo icon -->
                 <b class="logo-icon p-l-10">
                     <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -19,7 +19,9 @@
                 <!-- Logo text -->
                 <span class="logo-text">
                     <!-- dark Logo text -->
-                    <img src="{{ asset('ast/images/logo-text.png') }}" alt="homepage" class="light-logo" />
+                    <h1>Excitebrand</h1>
+                    {{-- <img src="{{ asset('images/excite-brand-logo.jpg') }}"
+                        alt="homepage" class="light-logo" /> --}}
 
                 </span>
                 <!-- Logo icon -->
@@ -164,10 +166,10 @@
                 <!-- User profile and search -->
                 <!-- ============================================================== -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href=""
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="#"
-                            alt="{{ Auth::user()->name }}" class="rounded-circle"
-                            width="31">{{ Auth::user()->name }}</a>
+                    <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic mt-3" href=""
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                            src="{{ asset('images/person.png') }}" alt="{{ Auth::user()->name }}" class="rounded-circle"
+                            width="31"></a>
                     <div class="dropdown-menu dropdown-menu-right user-dd animated">
                         <a class="dropdown-item" href="{{ route('profile.show') }}"><i class="ti-user m-r-5 m-l-5"></i>
                             {{ __('Profile') }}</a>

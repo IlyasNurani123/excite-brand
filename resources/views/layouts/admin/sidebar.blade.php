@@ -10,8 +10,9 @@
                 </li>
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                         href="{{ route('project') }}" aria-expanded="false"><i
-                            class="mdi mdi-chart-areaspline"></i><span class="hide-menu">Project</span></a></li>
-                <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark sidebar-link"
+                            class="mdi mdi-chart-areaspline"></i><span class="hide-menu">Portfolio</span></a></li>
+                {{-- <li class="sidebar-item"> <a
+                        class="sidebar-link has-arrow waves-effect waves-dark sidebar-link"
                         href="{{ route('service') }}" aria-expanded="false"><i class="mdi mdi-web"></i><span
                             class="hide-menu">{{ __('Services') }}</span></a>
                     <ul aria-expanded="false" class="collapse  first-level">
@@ -22,7 +23,7 @@
                                     class="mdi mdi-plus-circle"></i><span class="hide-menu"> Add Service </span></a>
                         </li>
                     </ul>
-                </li>
+                </li> --}}
 
                 <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark sidebar-link"
                         href="{{ route('testimonial') }}" aria-expanded="false"><i class="mdi mdi-blur-linear"></i><span
@@ -45,12 +46,17 @@
                                     class="mdi mdi-note-outline"></i><span class="hide-menu"> All Post </span></a></li>
                         <li class="sidebar-item"><a href="{{ route('add.post') }}" class="sidebar-link"><i
                                     class="mdi mdi-note-plus"></i><span class="hide-menu"> Add Post</span></a></li>
+
+                        <li class="sidebar-item"><a href="{{ route('post.trash') }}" class="sidebar-link"><i
+                                    class="mdi mdi-note-outline"></i><span class="hide-menu"> All Trash Post </span></a>
+                        </li>
                     </ul>
                 </li>
 
-                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="{{ route('service.feature') }}" aria-expanded="false"><i
-                            class="mdi mdi-border-inside"></i><span class="hide-menu">Service Feature</span></a></li>
+                {{-- <li class="sidebar-item"> <a
+                        class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('service.feature') }}"
+                        aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Service
+                            Feature</span></a></li> --}}
                 {{-- <li class="sidebar-item"> <a
                         class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('package') }}"
                         aria-expanded="false"><i class="mdi mdi-blur-linear"></i><span
