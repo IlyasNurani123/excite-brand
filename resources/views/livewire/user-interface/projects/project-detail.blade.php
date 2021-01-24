@@ -14,7 +14,8 @@
         </div>
         <div class="our-work-top-right-container">
             <div class="top-right-image-wrapper">
-                <img src="{{ asset('images/top-right-image.png') }}" class="top-right-image" />
+                {{-- <img src="{{ asset('images/top-right-image.png') }}"
+                    class="top-right-image" /> --}}
             </div>
         </div>
     </div>
@@ -22,40 +23,46 @@
     <div class="container">
 
         <div class=" our-work-grid-wrapper">
-            <div class="our-work-grid-container text-center">
-                <div class="row py-3">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 offset-md-1 offset-lg-1 ">
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                            <div class="overlay">
-                                <h2>Hover effect 3</h2>
-                                <a class="info" href="#">link here</a>
+            <div class="our-work-grid-container">
+                @foreach ($portfolio->chunk(3) as $chunk)
+                    <div class="row py-3">
+                        @foreach ($chunk as $port)
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="{{ asset('storage/' . $port->project_image) }}"
+                                        alt="">
+                                    <div class="overlay">
+
+                                        <a class="info" href="{{ $port->url }}" target="_blank">
+                                            <h2>{{ $port->project_name }}</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+
+                        {{-- <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
+                                <div class="overlay">
+                                    <h2>Hover effect 3</h2>
+                                    <a class="info" href="#">link here</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                            <div class="overlay">
-                                <h2>Hover effect 3</h2>
-                                <a class="info" href="#">link here</a>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
+                                <div class="overlay">
+                                    <h2>Hover effect 3</h2>
+                                    <a class="info" href="#">link here</a>
+                                </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                            <div class="overlay">
-                                <h2>Hover effect 3</h2>
-                                <a class="info" href="#">link here</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row py-3">
+                @endforeach
+                {{-- <div class="row py-3">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 offset-md-1 offset-lg-1">
                         <div class="hovereffect">
                             <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
@@ -117,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 {{-- test file --}}
 

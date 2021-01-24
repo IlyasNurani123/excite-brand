@@ -1,31 +1,41 @@
 <section class="happy-client">
     <div class="container">
-        <div class="row text-center">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6 col-md-6 offset-lg-3 offset-md-3 ">
+                <img src="{{ asset('images/googlevertical.jpg') }}">
+            </div>
+        </div>
+        <div class="row text-center mt-5">
             <div class="col">
                 <div class="counter">
-                    <i class="fa fa-code fa-2x"></i>
-                    <h2 class="timer count-title count-number" data-to="150" data-speed="150"></h2>
+                    <div class="happy-client-icon text-center"><img src="{{ asset('images/design icon/web.png') }}">
+                    </div>
+                    <h2 class="timer count-title count-number" data-to="150" data-speed="550"></h2>
                     <p class="count-text ">Website Orders</p>
                 </div>
             </div>
             <div class="col">
                 <div class="counter">
-                    <i class="fa fa-coffee fa-2x"></i>
-                    <h2 class="timer count-title count-number" data-to="100" data-speed="150"></h2>
+                    <div class="happy-client-icon text-center"><img
+                            src="{{ asset('images/design icon/mobile-app.png') }}"></div>
+                    <h2 class="timer count-title count-number" data-to="100" data-speed="550"></h2>
                     <p class="count-text ">App Orders</p>
                 </div>
             </div>
             <div class="col">
                 <div class="counter">
-                    <i class="fa fa-lightbulb-o fa-2x"></i>
-                    <h2 class="timer count-title count-number" data-to="110" data-speed="150"></h2>
+                    <div class="happy-client-icon text-center"><img
+                            src="{{ asset('images/design icon/bullhorn.png') }}"></div>
+                    <h2 class="timer count-title count-number" data-to="110" data-speed="550"></h2>
                     <p class="count-text ">Digital Marketing</p>
                 </div>
             </div>
             <div class="col">
+
                 <div class="counter">
-                    <i class="fa fa-bug fa-2x"></i>
-                    <h2 class="timer count-title count-number" data-to="157" data-speed="150"></h2>
+                    <div class="happy-client-icon text-center"><img
+                            src="{{ asset('images/design icon/customer-review.png') }}"></div>
+                    <h2 class="timer count-title count-number" data-to="157" data-speed="550"></h2>
                     <p class="count-text ">Satisfied Clients</p>
                 </div>
             </div>

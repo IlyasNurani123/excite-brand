@@ -11,8 +11,7 @@
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                         href="{{ route('project') }}" aria-expanded="false"><i
                             class="mdi mdi-chart-areaspline"></i><span class="hide-menu">Portfolio</span></a></li>
-                {{-- <li class="sidebar-item"> <a
-                        class="sidebar-link has-arrow waves-effect waves-dark sidebar-link"
+                <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark sidebar-link"
                         href="{{ route('service') }}" aria-expanded="false"><i class="mdi mdi-web"></i><span
                             class="hide-menu">{{ __('Services') }}</span></a>
                     <ul aria-expanded="false" class="collapse  first-level">
@@ -23,7 +22,7 @@
                                     class="mdi mdi-plus-circle"></i><span class="hide-menu"> Add Service </span></a>
                         </li>
                     </ul>
-                </li> --}}
+                </li>
 
                 <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark sidebar-link"
                         href="{{ route('testimonial') }}" aria-expanded="false"><i class="mdi mdi-blur-linear"></i><span

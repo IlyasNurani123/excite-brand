@@ -8,6 +8,7 @@ use App\Http\Livewire\UserInterface\Blog\BlogIndex;
 use App\Http\Livewire\UserInterface\Blog\PostDetail;
 use App\Http\Livewire\UserInterface\WhoWeAre\AboutUs;
 use App\Http\Livewire\UserInterface\Services\WhatWeDo;
+use App\Http\Livewire\UserInterface\Blog\PostBycategory;
 use App\Http\Livewire\UserInterface\Services\WebDevelopment;
 use App\Http\Livewire\UserInterface\ContactUs\ContactUsIndex;
 use App\Http\Livewire\UserInterface\Services\WeDesign\WeDesign;
@@ -43,5 +44,6 @@ Route::get('/ppc-agency', PpcIndex::class)->name('ppc-agency');
 Route::get('/contact-us',ContactUsIndex::class)->name('contact-us');
 
 Route::get('/newupdates-blog',BlogIndex::class)->name('blogs');
-Route::get('/newupdates-blog/post/{slug}',PostDetail::class)->name('details');
+Route::get('/newupdates-blog/{slug}',PostDetail::class)->name('details');
+Route::get('newupdates-blog/category/{category}',PostBycategory::class)->name('post-by-category');
 

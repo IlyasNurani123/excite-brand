@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Roboto',
+    font-family: 'Roboto' !important;
 }
 
 .main-container {
@@ -64,8 +64,13 @@ p {
     height: 600px;
 }
 
-.navbar {
-    background-color: #425058 !important;
+#banner .carousel-item img {
+    width: 100%;
+}
+
+#nav-bar {
+    position: absolute;
+    top: 0;
 }
 
 .navbar-brand img {
@@ -102,19 +107,19 @@ p {
 }
 
 .happy-client {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .happy-client-icon {
-    width: 40px;
-    height: 40px;
-    border: 1px;
-    border-width: 1px;
-    border-color: rgb(232, 124, 124);
-    border-style: solid;
-    border-radius: 50%;
-    background-color: rgb(232, 124, 124);
+    width: 100%;
+    height: 100%;
 }
+
+
+/* .counter .happy-client-icon img {
+    display: flex !important;
+    justify-content: center !important;
+} */
 
 
 /* .happy-client-text {
@@ -143,6 +148,11 @@ p {
 
 .happy-client-box {
     border-right: 1px solid lightgray;
+}
+
+.google-partner-image {
+    display: flex;
+    justify-content: center;
 }
 
 #what-we-do {
@@ -193,8 +203,8 @@ p {
 }
 
 .we-do {
-    margin-top: 15%;
-    padding-top: 15%;
+    margin-top: 5%;
+    padding-top: 5%;
 }
 
 .we-do p {
@@ -332,7 +342,7 @@ p {
 
 .our-work-grid-wrapper {
     width: 100%;
-    height: 550px;
+    min-height: 550px;
     background-color: #FFFFFF;
     position: relative;
     display: flex;
@@ -344,7 +354,8 @@ p {
     left: 0;
     right: 0;
     top: -140px;
-    padding-left: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -1102,7 +1113,7 @@ p {
 
 .stylin-email-and-contact-no {
     color: #FF7300;
-    font-family: bold;
+    font-weight: bold;
     padding: 2px
 }
 
@@ -1139,7 +1150,7 @@ p {
 }
 
 .card-body-wrapper {
-    padding: 30px;
+    padding: 20px;
 }
 
 .card-effect {
@@ -1390,6 +1401,11 @@ p {
     height: 550px;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 250px !important;
+}
+
 .banner-image img {
     width: 100%;
     height: 100%;
@@ -1423,13 +1439,8 @@ p {
     text-shadow: 5px 1px 10px rgb(35, 34, 34);
 }
 
-.blog-title {
-    margin: 20px 40px;
-    padding-left: 20px;
-}
-
 .feature-image {
-    width: 600px;
+    width: 100%;
     height: 300px;
 }
 
@@ -1439,14 +1450,30 @@ p {
     border: 1px lightgray;
 }
 
-.post-description {
-    padding-top: 1rem;
+.blog-title {
+    font-family: 'Roboto';
+    margin: 10px;
+    padding-left: 50px;
+}
+
+.catagory-title h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.post-caption {
+    font-family: 'Roboto';
+}
+
+.post-title h5 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
 }
 
 .post-description p {
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 32px;
 }
 

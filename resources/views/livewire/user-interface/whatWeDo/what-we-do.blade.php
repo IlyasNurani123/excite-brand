@@ -13,11 +13,11 @@
                             class="btn btn-outline-secondary custom-button">Read More</button></div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            {{-- <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="d-flex justify-content-center"><img src="{{ asset('images/google.jpg') }}" alt="google">
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            </div> --}}
+            <div class="col-sm-12 col-md-6 col-lg-5 offset-lg-2 ">
 
                 <div class="container we-do">
                     <div class="we-do-img text-align-center"> <img src="{{ asset('images/WeDo.JPG') }}"></div>

@@ -46,6 +46,7 @@ Route::middleware('auth:sanctum')->group(function () {
     // \UniSharp\LaravelFilemanager\Lfm::routes();
     Route::group(['middleware' => ['admin'],'prefix'=> 'admin'], function () {
         Route::get('/dashboard', Dashboard::class)->name('dashboard');
+
         Route::get('/project', Index::class)->name('project');
         Route::get('/service', ServiceComponent::class)->name('service');
         Route::get('/service/add', AddService::class)->name('add-service');

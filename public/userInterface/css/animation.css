@@ -1,0 +1,68 @@
+.box-control {
+    position: absolute;
+    top: 123px;
+    left: 40px;
+    right: 30px;
+}
+
+#box-c-1 {
+    position: absolute;
+    top: 128px;
+    left: 40px;
+    right: 0;
+}
+
+.animation-wrapper {
+    position: relative;
+}
+
+#image-box-1 {
+    width: 50px;
+    height: 50px;
+    /* background: #bcccf7; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-box-2 {
+    width: 30;
+    height: 30;
+    background-color: black;
+}
+
+.tail {
+    width: 10px;
+    height: 10px;
+    background-color: #1414ef;
+}
+
+h1.ml8 {
+    font-weight: 900;
+    font-size: 4.5em;
+    color: #fff;
+    width: 3em;
+    height: 3em;
+}
+
+.ml8 .circle-white {
+    width: 3em;
+    height: 3em;
+    border: 2px dashed white;
+    border-radius: 2em;
+}
+
+.ml8 .circle-dark {
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #4f7b86;
+    border-radius: 3em;
+    z-index: 1;
+}
+
+.ml8 .circle-dark-dashed {
+    border-radius: 2.4em;
+    background-color: transparent;
+    border: 2px dashed #4f7b86;
+    width: 2.3em;
+    height: 2.3em;
+}

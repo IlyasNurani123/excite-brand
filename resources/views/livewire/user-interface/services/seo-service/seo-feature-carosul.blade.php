@@ -51,29 +51,29 @@
     </div>
 </div>
 {{-- </div> --}}
-@push('scripts')
+{{-- @push('scripts')
 
-    <script language="javascript">
-        $('#myCarousel').carousel({
-            interval: 5000
-        });
+<script language="javascript">
+    $('#myCarousel').carousel({
+        interval: 5000
+    });
 
-        $('.carousel .item').each(function() {
-            var next = $(this).next();
-            if (!next.length) {
-                next = $(this).siblings(':first');
-            }
-            next.children(':first-child').clone().appendTo($(this));
+    $('.carousel .item').each(function() {
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
 
-            if (next.next().length > 0) {
+        if (next.next().length > 0) {
 
-                next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
+            next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
 
-            } else {
-                $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+        } else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
 
-            }
-        });
+        }
+    });
 
-    </script>
-@endPush
+</script>
+@endPush --}}

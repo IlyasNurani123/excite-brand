@@ -26,6 +26,7 @@
                 <div class="feature-image-detail">
                     <img src="{{ asset('storage/' . $post[0]->feature_image) }}" height="250">
                 </div>
+                <small class="m-3"> <strong>Admin {{ $post[0]->created_at }}</strong></small>
             </div>
             <div class="col-sm-12 col-md-7 col-lg-7">
                 <div class="post-title pt-3">
@@ -35,38 +36,14 @@
                 <div>{{ $post[0]->catagory->name }}</div>
 
                 <div class="time-date pt-3">
-                    @php
-
-                    $date = Carbon\Carbon::today()->toDateString();
-                    @endphp
-                    <strong>{{ $date }}</strong>
+                    <strong>{{ $post[0]->created_at }}</strong>
                 </div>
-
 
                 <div class="post-description">
                     {!! $post[0]->article !!}
                 </div>
             </div>
-            {{-- <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="popular-post">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-6">
-                            <div class="popular-post-images">
-
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6">
-                            <div class="catagory-content">
-                                <div class="post-description">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
         </div>
-
     </div>
     @livewire('user-interface.lets-talk')
     @livewire('user-interface.newsletters')
