@@ -55,7 +55,8 @@
                                     @error('message') <span class="text-danger">{{ $message }}</span>@enderror
                                 </div>
                                 <div class="form-group">
-                                    <button class="contact-form-submit-btn" type="submi">Send Message</button>
+                                    <button class="contact-form-submit-btn" type="submi"
+                                        wire:loading.attr="disabled">Send Message</button>
 
                                 </div>
                             </form>

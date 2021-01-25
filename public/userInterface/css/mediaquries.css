@@ -6,6 +6,19 @@
     }
 }
 
+@media(min-width: 768px) and (max-width: 1025px) {
+    .our-work-grid-wrapper {
+        height: 25rem !important;
+    }
+    #seo-feature .card {
+        width: 100%;
+    }
+    .row-wrapper-seo-feature {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
 @media(min-width: 768px) {
     #google-h-img {
         display: none;
@@ -17,8 +30,25 @@
 
 @media(min-width: 320px) and (max-width: 767px) {
     /*******************What We Do Section***********************8*/
+    .client-testimonial-name {
+        padding-top: 0px;
+        /* margin-top: -30px !important; */
+    }
+    #testimonial .carousel-inner {
+        position: relative;
+        top: 180px;
+    }
+    .testmonial-image-2 {
+        position: unset;
+    }
     .our-work-grid-wrapper {
-        height: 160rem !important;
+        height: 100% !important;
+    }
+    .our-work-grid-container {
+        position: unset;
+    }
+    .portfolio-our-work {
+        height: 100% !important;
     }
     .we-are-a-landing {
         margin-left: 0%;
@@ -70,7 +100,8 @@
         display: none;
     }
     .our-work-caption {
-        margin-top: 70px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     #portfolio-container {
         margin-top: 40px;
@@ -85,6 +116,10 @@
     }
     .service-image {
         margin-bottom: 20px;
+    }
+    .service-icon {
+        display: flex;
+        justify-content: center;
     }
     .service-item {
         text-align: center;
@@ -174,9 +209,11 @@
         width: 100%;
     }
     .row-wrapper-seo-feature {
-        margin-left: 0px;
+        /* margin-left: 0px;
         margin-top: 0px;
-        padding-right: 0px;
+        padding-right: 0px; */
+        padding: 0;
+        margin: 0;
     }
     .seo-btn-services {
         justify-content: center;
@@ -234,7 +271,13 @@
 
 @media(min-width: 320px) and (max-width: 575px) {
     .our-work-grid-wrapper {
-        height: 93rem !important;
+        height: 100% !important;
+    }
+    .our-work-grid-container {
+        position: unset;
+    }
+    .portfolio-our-work {
+        height: 100% !important;
     }
     .icon-box img {
         width: 60%;

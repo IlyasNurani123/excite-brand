@@ -14,8 +14,8 @@
         </div>
     </div>
     @include('livewire.user-interface.who-we-are.we-make-you-brand-talk')
+
     @include('livewire.user-interface.who-we-are.why-excite-brand')
     @livewire('user-interface.lets-talk')
-    @livewire('user-interface.newsletters')
 
 </div>

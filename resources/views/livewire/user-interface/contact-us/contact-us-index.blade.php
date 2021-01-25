@@ -14,5 +14,5 @@
             {{-- <h6></h6> --}}
         </div>
     </div>
-    @include('livewire.user-interface.contact-us.contact-us')
+    @livewire('user-interface.contact-us.contact-us-component')
 </div>

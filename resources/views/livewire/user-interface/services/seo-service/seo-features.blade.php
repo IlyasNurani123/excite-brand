@@ -31,7 +31,8 @@
                             to help you</p>
                     </div>
                     <div class="card-footer seo-services-button">
-                        <a href="#" type="button" class="btn seo-btn-services">FIND YOUR FREE SEO AUDIT</a>
+                        <a href="#" type="button" class="btn seo-btn-services" data-toggle="modal"
+                            data-target="#formModal">FIND YOUR FREE SEO AUDIT</a>
                     </div>
                 </div>
             </div>
@@ -48,14 +49,16 @@
                             to help you</p>
                     </div>
                     <div class="card-footer seo-services-button">
-                        <a href="#" type="button" class="btn seo-btn-services">FIND YOUR FREE SEO AUDIT</a>
+                        <a href="#" type="button" class="btn seo-btn-services" data-toggle="modal"
+                            data-target="#formModal">FIND YOUR FREE SEO AUDIT</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="seo-services-button text-center">
-        <a href="#" type="button" class="btn seo-btn-services">Get Page 1 Results On Google</a>
+        <a href="#" type="button" class="btn seo-btn-services" data-toggle="modal" data-target="#formModal">Get Page 1
+            Results On Google</a>
     </div>
     @livewire('user-interface.services.multiple-step-form')
 </section>

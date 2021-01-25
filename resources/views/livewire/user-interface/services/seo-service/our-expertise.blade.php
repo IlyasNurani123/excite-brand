@@ -151,7 +151,8 @@
         </div>
 
         <div class="seo-services-button text-center py-5">
-            <a href="#" type="button" class="btn seo-btn-services">Get Your Free Strategy Pack</a>
+            <a href="#" type="button" class="btn seo-btn-services" data-toggle="modal" data-target="#formModal">Get Your
+                Free Strategy Pack</a>
         </div>
     </div>
 </section>

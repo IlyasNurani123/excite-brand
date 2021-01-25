@@ -55,11 +55,12 @@ p {
     font-family: 'Roboto';
 }
 
-#nav-bar {
+
+/* #nav-bar {
     position: static;
     top: 0;
     z-index: 10;
-}
+} */
 
 #banner {
     height: 600px;
@@ -69,9 +70,12 @@ p {
     width: 100%;
 }
 
-#nav-bar {
+.navbar {
     position: absolute;
-    top: 0;
+    z-index: 99;
+    right: 0;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
 }
 
 

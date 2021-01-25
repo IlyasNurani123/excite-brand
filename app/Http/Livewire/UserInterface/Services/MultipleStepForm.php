@@ -2,9 +2,11 @@
 
 namespace App\Http\Livewire\UserInterface\Services;
 
-use Livewire\Component;
-use App\Models\SeoServiceForm;
 use Mail;
+use Livewire\Component;
+use App\Mail\getQuoteRequest;
+use App\Models\SeoServiceForm;
+use App\Notifications\ContactUsNotification;
 
 class MultipleStepForm extends Component
 {
@@ -91,8 +93,8 @@ class MultipleStepForm extends Component
             'website_url' =>$this->website_url
             ]);
 
-            Mail::to('airlinkuk2013@gmail.com')->queue(new ContactLeadMailable($qoute->toArray()));
-            $data->notify(new ContactUsNotification($quote));
+            Mail::to('airlinkuk2013@gmail.com')->send(new getQuoteRequest($quote->toArray()));
+            $quote->notify(new ContactUsNotification($quote));
             session()->flash('message', 'You quote submit Successful');
     }
 }

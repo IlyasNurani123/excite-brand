@@ -21,7 +21,7 @@ class ContactUsComponent extends Component
 
     public function render()
     {
-        return view('livewire.user-interface.contact-us.contact-us')->slot('main');
+        return view('livewire.user-interface.contact-us.contact-us-component')->slot('main');
     }
 
     protected $rules = [
@@ -53,7 +53,7 @@ class ContactUsComponent extends Component
     
        $data= ContactUs::firstOrCreate($validated);
       
-       Mail::to('airlinkuk2013@gmail.com')->queue(new getQuoteRequest($data->toArray()));
+       Mail::to('airlinkuk2013@gmail.com')->send(new ContactLeadMailable($data->toArray()));
 
         
        $data->notify(new ContactUsNotification($validated));

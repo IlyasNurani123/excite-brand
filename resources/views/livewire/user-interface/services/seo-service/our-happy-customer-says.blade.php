@@ -6,7 +6,8 @@
                     <p class="boost-title">BOOST YOUR WEBSITE TRAFFIC WITH OUR PROVEN SEO STRATEGY</p>
                 </div>
                 <div class="boost-your-site-button text-center">
-                    <a href="#" type="button" class="btn seo-btn-services">FIND YOUR FREE SEO AUDIT</a>
+                    <a href="#" type="button" class="btn seo-btn-services" data-toggle="modal"
+                        data-target="#formModal">FIND YOUR FREE SEO AUDIT</a>
                 </div>
             </div>
         </div>
