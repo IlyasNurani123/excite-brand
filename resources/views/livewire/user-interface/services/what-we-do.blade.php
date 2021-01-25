@@ -16,5 +16,4 @@
     </div>
     @include('livewire.user-interface.services.let-your-brand-recognized')
     @livewire('user-interface.lets-talk')
-    @livewire('user-interface.newsletters')
 </div>

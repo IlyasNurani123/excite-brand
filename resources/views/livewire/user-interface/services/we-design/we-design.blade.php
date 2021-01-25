@@ -17,5 +17,4 @@
     @livewire('user-interface.services.we-design.we-design-features')
     @livewire('user-interface.services.we-design.we-design-detail')
     @livewire('user-interface.lets-talk')
-    @livewire('user-interface.newsletters')
 </div>

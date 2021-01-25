@@ -52,8 +52,7 @@
                         <tr>
                             <td>{{ $service->title }}</td>
                             <td>{{ Illuminate\Support\Str::limit($service->description, 50) }}</td>
-                            <td><img src="{{ asset('storage/' . $service->icon) }}" height="100" width="100"
-                                    alt="{{ $project->project_name }}"></td>
+                            <td><img src="{{ asset('storage/' . $service->icon) }}" alt="{{ $service->title }}"></td>
                             <td>
                                 <a href="{{ route('service.edit', ['service' => $service->id]) }}"
                                     class="mdi  mdi-pencil  hover:bg-blue-600 btn btn-primary"></a>

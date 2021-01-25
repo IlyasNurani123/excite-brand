@@ -53,7 +53,7 @@ class ContactUsComponent extends Component
     
        $data= ContactUs::firstOrCreate($validated);
       
-       Mail::to('ilyas@gmail.com')->queue(new ContactLeadMailable($data->toArray()));
+       Mail::to('airlinkuk2013@gmail.com')->queue(new getQuoteRequest($data->toArray()));
 
         
        $data->notify(new ContactUsNotification($validated));

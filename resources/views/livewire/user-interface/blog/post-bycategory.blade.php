@@ -26,4 +26,3 @@
         @endforeach
     </div>
         @livewire('user-interface.lets-talk')
-        @livewire('user-interface.newsletters')

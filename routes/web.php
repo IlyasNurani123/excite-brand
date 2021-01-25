@@ -11,6 +11,7 @@ use App\Http\Livewire\UserInterface\Services\WhatWeDo;
 use App\Http\Livewire\UserInterface\Blog\PostBycategory;
 use App\Http\Livewire\UserInterface\Services\WebDevelopment;
 use App\Http\Livewire\UserInterface\ContactUs\ContactUsIndex;
+use App\Http\Livewire\UserInterface\Projects\PortfolioDetail;
 use App\Http\Livewire\UserInterface\Services\WeDesign\WeDesign;
 use App\Http\Livewire\UserInterface\Services\SeoService\PpcIndex;
 use App\Http\Livewire\UserInterface\Services\SeoService\SeoIndex;
@@ -46,4 +47,4 @@ Route::get('/contact-us',ContactUsIndex::class)->name('contact-us');
 Route::get('/newupdates-blog',BlogIndex::class)->name('blogs');
 Route::get('/newupdates-blog/{slug}',PostDetail::class)->name('details');
 Route::get('newupdates-blog/category/{category}',PostBycategory::class)->name('post-by-category');
-
+Route::get('/our-work', PortfolioDetail::class)->name('our-work');

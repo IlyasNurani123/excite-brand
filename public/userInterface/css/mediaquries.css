@@ -17,6 +17,9 @@
 
 @media(min-width: 320px) and (max-width: 767px) {
     /*******************What We Do Section***********************8*/
+    .our-work-grid-wrapper {
+        height: 160rem !important;
+    }
     .we-are-a-landing {
         margin-left: 0%;
     }
@@ -221,22 +224,6 @@
     .boost-your-site-button {
         margin-bottom: 22px;
     }
-    /* *******Our Happy Client Section********* */
-    .icon-box {
-        /* margin-bottom: 15px; */
-        /* margin: 15px; */
-    }
-    /*  .icon-box img {
-            width: 100%;
-            height: 100%;
-            padding: 15px;
-        } */
-    /* .our-seo-title {
-            font-size: 25px;
-        }
-        #seo-feature .card {
-            margin: 10px 0px;
-        } */
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
@@ -246,6 +233,9 @@
 }
 
 @media(min-width: 320px) and (max-width: 575px) {
+    .our-work-grid-wrapper {
+        height: 93rem !important;
+    }
     .icon-box img {
         width: 60%;
         display: flex;

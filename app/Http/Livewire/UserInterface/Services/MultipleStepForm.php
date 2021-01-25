@@ -4,6 +4,7 @@ namespace App\Http\Livewire\UserInterface\Services;
 
 use Livewire\Component;
 use App\Models\SeoServiceForm;
+use Mail;
 
 class MultipleStepForm extends Component
 {
@@ -79,7 +80,7 @@ class MultipleStepForm extends Component
                     'contact_no' => 'required',
                 ]);
 
-       $quote= SeoServiceForm::create([
+       $quote= SeoServiceForm::firstOrCreate([
             'google_ads_service'=> $this->google_add,
             'seo_service' =>$this->seo,
             'web_design_service' => $this->web_design,
@@ -90,6 +91,8 @@ class MultipleStepForm extends Component
             'website_url' =>$this->website_url
             ]);
 
+            Mail::to('airlinkuk2013@gmail.com')->queue(new ContactLeadMailable($qoute->toArray()));
+            $data->notify(new ContactUsNotification($quote));
             session()->flash('message', 'You quote submit Successful');
     }
 }

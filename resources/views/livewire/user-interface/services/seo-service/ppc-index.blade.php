@@ -16,5 +16,4 @@
     </div>
     @include('livewire.user-interface.services.seo-service.ppc-detail-description')
     @livewire('user-interface.lets-talk')
-    @livewire('user-interface.newsletters')
 </div>

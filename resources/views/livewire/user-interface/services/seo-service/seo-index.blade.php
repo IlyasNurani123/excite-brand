@@ -19,6 +19,5 @@
     @include('livewire.user-interface.services.seo-service.why-customer-love-us')
     @include('livewire.user-interface.services.seo-service.our-happy-customer-says')
     @livewire('user-interface.lets-talk')
-    @livewire('user-interface.newsletters')
 
 </div>

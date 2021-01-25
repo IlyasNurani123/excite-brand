@@ -25,6 +25,7 @@
                             <div class="form-group">
                                 <label for="message-text" class="col-form-label"> Project Type</label>
                                 <select class="form-control" wire:model="project_type">
+                                    <option>Please select website type</option>
                                     <option>Mobile App</option>
                                     <option>Web Site</option>
                                     <option>Other</option>

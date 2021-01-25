@@ -15,5 +15,4 @@
         </div>
     </div>
     @include('livewire.user-interface.contact-us.contact-us')
-    @livewire('user-interface.newsletters')
 </div>

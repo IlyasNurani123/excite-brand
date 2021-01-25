@@ -11,10 +11,10 @@
             <div class="contact-detail-captions">
                 <div class="our-address">
                     <div class="d-flex">
-                        <span class="contact-us-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <h6 class="our-address-title">Our Address:</h6>
+                        <div class="contact-us-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <h5 class="our-address-title">Our Address:</h5>
                     </div>
-                    <p class="our-address-description">83 Ducie St, Manchester, M1 2JQ, UK</p>
+                    <p class="">83 Ducie St, Manchester, M1 2JQ, UK</p>
                 </div>
                 <div class="our-mail-box">
                     <div class="d-flex">

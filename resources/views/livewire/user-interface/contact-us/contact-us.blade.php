@@ -26,7 +26,7 @@
                 {{-- end Notification --}}
                 <div id="contact-us-form">
                     <div class="contact-us-form-header">
-                        <h6 class="get-in-touch">Get in Touch</h6>
+                        <h5 class="get-in-touch">Get in Touch</h5>
                         <h1 class="get-ready-to-start">Ready to Get Started?</h1>
                     </div>
 

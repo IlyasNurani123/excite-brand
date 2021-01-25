@@ -10,7 +10,7 @@ class ProjectDetail extends Component
    
     public function render()
     {
-        $portfolio =Project::limit(9)->get();
+        $portfolio =Project::limit(9)->latest()->get();
         return view('livewire.user-interface.projects.project-detail',compact('portfolio'));
     }
 }

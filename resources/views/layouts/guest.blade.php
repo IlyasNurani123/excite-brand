@@ -55,6 +55,7 @@
             {{ $slot }}
         </main>
     </div>
+    @livewire('user-interface.newsletters')
     @include('layouts.userInterface.footer')
 
     @livewireScripts

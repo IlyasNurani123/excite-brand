@@ -1,7 +1,7 @@
 <section id="portfolio-container">
     <div class="portfolio-our-work">
         <div class="our-work-caption">
-            <h1 class="our-work-title text-center">our work</h1>
+            <h1 class="our-work-title text-center mb-3">our work</h1>
             <p class="our-work-description text-center">we build strong, authentic brands that create real impact</p>
         </div>
         <div class="our-work-left-image-container">
@@ -25,9 +25,9 @@
         <div class=" our-work-grid-wrapper">
             <div class="our-work-grid-container">
                 @foreach ($portfolio->chunk(3) as $chunk)
-                    <div class="row py-3">
+                    <div class="row py-2">
                         @foreach ($chunk as $port)
-                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mb-2">
                                 <div class="hovereffect">
                                     <img class="img-responsive" src="{{ asset('storage/' . $port->project_image) }}"
                                         alt="">
@@ -40,95 +40,12 @@
                                 </div>
                             </div>
                         @endforeach
-
-                        {{-- <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
-                            <div class="hovereffect">
-                                <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                                <div class="overlay">
-                                    <h2>Hover effect 3</h2>
-                                    <a class="info" href="#">link here</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
-                            <div class="hovereffect">
-                                <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                                <div class="overlay">
-                                    <h2>Hover effect 3</h2>
-                                    <a class="info" href="#">link here</a>
-                                </div>
-                            </div>
-                        </div> --}}
                     </div>
                 @endforeach
-                {{-- <div class="row py-3">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 offset-md-1 offset-lg-1">
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                            <div class="overlay">
-                                <h2>Hover effect 3</h2>
-                                <a class="info" href="#">link here</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                            <div class="overlay">
-                                <h2>Hover effect 3</h2>
-                                <a class="info" href="#">link here</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                            <div class="overlay">
-                                <h2>Hover effect 3</h2>
-                                <a class="info" href="#">link here</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row py-3">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 offset-md-1 offset-lg-1">
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                            <div class="overlay">
-                                <h2>Hover effect 3</h2>
-                                <a class="info" href="#">link here</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                            <div class="overlay">
-                                <h2>Hover effect 3</h2>
-                                <a class="info" href="#">link here</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="{{ asset('images/slider/1.jpg') }}" alt="">
-                            <div class="overlay">
-                                <h2>Hover effect 3</h2>
-                                <a class="info" href="#">link here</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-
-                {{-- test file --}}
-
             </div>
         </div>
+        <div class="text-center mb-4"><button type="button" class="btn btn-outline-secondary custom-button"
+                style="width: 150px">More</button></div>
+    </div>
     </div>
 </section>

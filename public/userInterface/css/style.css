@@ -14,13 +14,13 @@ body {
 
 h1 {
     font-size: 40px;
-    font-weight: 700;
     font-family: 'Roboto';
+    font-weight: 900;
 }
 
 h2 {
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 600;
     font-family: 'Roboto';
 }
 
@@ -49,8 +49,9 @@ h6 {
 }
 
 p {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
     font-family: 'Roboto';
 }
 
@@ -72,6 +73,12 @@ p {
     position: absolute;
     top: 0;
 }
+
+
+/* .navbar {
+    position: absolute;
+    top: 0;
+} */
 
 .navbar-brand img {
     height: 40px;
@@ -166,28 +173,20 @@ p {
 }
 
 .we-are-a-landing h1 {
-    /* font-size: 48px; */
     color: #e2343d;
-    /* line-height: 48px;
-    text-transform: uppercase;
-    font-family: lato;
-    font-weight: 900;
-    margin: 0; */
 }
 
 .we-are-a-landing h5 {
     color: rgb(62, 59, 59);
+    font-weight: 600;
+    font-size: 20px
 }
 
 .custom-paragraph {
-    font-size: 18px;
-    font-weight: 400;
     color: rgb(62, 59, 59);
 }
 
 .we-are-a-landing p {
-    font-size: 18px;
-    font-weight: 400;
     color: rgb(62, 59, 59);
 }
 
@@ -198,8 +197,18 @@ p {
 
 .custom-button {
     border-radius: 40px;
-    border-color: black;
-    padding: 5 13px;
+    font-size: 18px;
+    font-weight: 600;
+    border-color: #E2343D;
+    color: rgb(62, 59, 59);
+    margin-top: 3%;
+    padding: 5px 13px;
+}
+
+.custom-button:hover {
+    border: 1px solid #E2343D;
+    background-color: #E2343D;
+    color: white;
 }
 
 .we-do {
@@ -232,13 +241,12 @@ p {
     overflow: hidden;
 }
 
-
-/* #our-service {
+#our-service .row {
     margin-top: 5%;
-} */
+}
 
 .service-image {
-    height: 450px;
+    height: 100%;
 }
 
 .service-image img {
@@ -263,6 +271,10 @@ p {
     background-color: #F7F7FF;
 }
 
+#our-services-detail .our-work-grid-container {
+    position: unset !important;
+}
+
 .service-item {
     margin: 30px 0px;
 }
@@ -273,10 +285,7 @@ p {
     margin-bottom: 10px;
 }
 
-.service-description p {
-    font-size: 16px;
-    font-weight: 400;
-}
+.service-description p {}
 
 
 /******************************************** Portfolio *********************************/
@@ -295,12 +304,12 @@ p {
 }
 
 .our-work-title {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     text-transform: uppercase;
 }
 
 .our-work-description {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 }
 
 .our-work-left-image-container {
@@ -342,18 +351,22 @@ p {
 
 .our-work-grid-wrapper {
     width: 100%;
-    min-height: 550px;
+    height: 50rem;
     background-color: #FFFFFF;
     position: relative;
     display: flex;
     justify-content: center;
 }
 
+#our-work-detail .our-work-grid-wrapper {
+    height: 100%;
+}
+
 .our-work-grid-container {
     position: absolute;
     left: 0;
     right: 0;
-    top: -140px;
+    top: -150px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -376,7 +389,7 @@ p {
     text-align: center;
     cursor: default;
     border-radius: 4px;
-    background-color: #C4C4C4;
+    /* background-color: rgb(62, 59, 59); */
 }
 
 .hovereffect .overlay {
@@ -387,10 +400,12 @@ p {
     top: 0;
     left: 0;
     padding: 70px 0;
+    background-color: rgb(62, 59, 59);
+    opacity: 0.4;
 }
 
 .hovereffect img {
-    display: block;
+    /* display: block; */
     position: relative;
     -webkit-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
@@ -411,8 +426,8 @@ p {
     text-transform: uppercase;
     text-align: center;
     position: relative;
-    font-size: 17px;
     padding: 10px;
+    color: white;
 }
 
 .hovereffect a.info {
@@ -566,13 +581,11 @@ p {
     color: #FFFFFF;
 }
 
-.contact-us-detail-description p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
+
+/* .contact-us-detail-description p {
+   
     line-height: 32px;
-}
+} */
 
 .contact-us-icon {
     padding: 12px;
@@ -590,23 +603,16 @@ p {
     font-size: 30px;
 }
 
-.contact-detail-captions h6 {
+.contact-detail-captions h5 {
     padding: 6px 2px;
     text-transform: uppercase;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 32px;
+    font-weight: 600px;
 }
 
 .contact-detail-captions p {
     padding-left: 4rem;
     margin-top: -1rem;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
-    font-size: 22px;
     line-height: 32px;
 }
 
@@ -619,20 +625,10 @@ p {
 }
 
 .contact-us-form-header h1 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 39px;
-    line-height: 48px;
     color: #362D49;
 }
 
-.contact-us-form-header h6 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 48px;
+.contact-us-form-header h5 {
     color: #362D49;
 }
 
@@ -726,42 +722,31 @@ p {
 }
 
 #footer .excite-brand {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 29px;
     color: #FF7300;
+    font-weight: 800 !important;
+}
+
+#footer .logo {
+    font-weight: 700;
 }
 
 #footer h5 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    line-height: 15px;
     color: #FF7300;
 }
 
 .office-uk {
     font-size: 18px;
-    line-height: 30px
+    font-weight: 900;
+    line-height: 20px
 }
 
 #footer p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
     color: #ffffff;
+    font-weight: 400;
 }
 
 .our-address h6 {
-    font-family: 'Roboto';
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
     color: #FFFFFF;
 }
 
@@ -802,6 +787,7 @@ p {
 
 .bottom-footer-text {
     color: #FF7300 !important;
+    font-weight: 800 !important;
 }
 
 
@@ -1291,6 +1277,10 @@ p {
     background-color: #F07713;
 }
 
+.lets-talk-title h1 {
+    color: white;
+}
+
 
 /* ************************************************* media Query */
 
@@ -1364,20 +1354,12 @@ p {
     margin-top: 10px;
     margin-bottom: 0;
     text-align: center;
-    font-family: 'Roboto';
-    font-size: 25px;
-    line-height: 30px;
     color: #0B132A;
 }
 
 .count-text {
     margin-top: 10px;
-    margin-bottom: 0;
     text-align: center;
-    font-family: 'Roboto';
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 30px;
     color: #0B132A;
 }
 

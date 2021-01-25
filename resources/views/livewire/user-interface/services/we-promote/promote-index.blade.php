@@ -17,5 +17,4 @@
     @livewire('user-interface.services.we-promote.we-promote-features')
     @livewire('user-interface.services.we-promote.promote-detail-description')
     @livewire('user-interface.lets-talk')
-    @livewire('user-interface.newsletters')
 </div>
