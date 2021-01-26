@@ -48,7 +48,18 @@
                         <td>
                             <img src="{{ asset('storage/' . $post->feature_image) }}" width="50" height="50">
                         </td>
-                        <td>{{ $post->status }}</td>
+                        <td>
+
+                            <!-- Rounded switch -->
+                            <label class="switch">
+                                <input type="checkbox" name="{{ $post->title }}"
+                                    wire:click="updateStatus({{ $post->id }},{{ $post->status }})"
+                                    {{ $post->status === 1 ? 'checked' : '' }}>
+                                <span class="slider round"></span>
+                            </label>
+
+
+                        </td>
                         <td>
                             <a href="{{ route('update.post', ['id' => $post->id]) }}"
                                 class="mdi  mdi-pencil  hover:bg-blue-600 btn btn-primary"></a>
@@ -59,6 +70,7 @@
                     </tr>
                 @endforeach
             </tbody>
+            {{ $posts->links() }}
         </table>
     </div>
 </div>

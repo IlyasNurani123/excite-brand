@@ -62,6 +62,7 @@ class MultipleStepForm extends Component
             $this->step++;
         }else{
             session()->flash('message', 'please select price');
+            session()->flash('alert-class', 'alert-danger');
         }
          }
 
@@ -96,5 +97,6 @@ class MultipleStepForm extends Component
             Mail::to('airlinkuk2013@gmail.com')->send(new getQuoteRequest($quote->toArray()));
             $quote->notify(new ContactUsNotification($quote));
             session()->flash('message', 'You quote submit Successful');
+            session()->flash('alert-class', 'alert-success');
     }
 }

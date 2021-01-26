@@ -7,6 +7,7 @@ use Livewire\Component;
 use App\Models\Catagory;
 use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class UpdatePost extends Component
 {
@@ -85,13 +86,22 @@ class UpdatePost extends Component
     public function updatePost()
     {
          $this->validate();
+
         $post =Post::findOrfail($this->post_id);
+       
+      $p_image = $post->feature_image;
+        if(!empty($this->feature_image)){
+            Storage::disk('public')->delete($post->feature_image);
+            $p_image= $this->feature_image->store("images/posts", "public");
+        }
+        $this->feature_image = $post->feature_image;
         $post->update([
             'post_title' => $this->post_title,
             'user_id' => Auth::user()->id,
             'catagory_id' =>$this->category_id,
             'article' => $this->article,
             'status' =>$this->status,
+            'feature_image' => $this->feature_image == '' ?  $p_img : $p_image, 
         ]);
         session()->flash('message', 'post Updated Successfully.');
         session()->flash('alert-class', 'alert-success');

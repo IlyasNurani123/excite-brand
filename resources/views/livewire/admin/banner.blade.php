@@ -52,7 +52,7 @@
                         </td>
                         <td>
                             <span class="mdi  mdi-pencil  hover:bg-blue-600 btn btn-primary" data-toggle="modal"
-                                data-target="#formModal" wire:click="$emit('onEdit',{{ $banner->id }})"></span>
+                                data-target="#formModal" wire:click="edit({{ $banner->id }})"></span>
                             <button wire:click="selectItems({{ $banner->id }},'deleteLogo')"
                                 class="mdi  mdi-delete  hover:bg-blue-600 btn btn-danger" data-toggle="modal"
                                 data-target="#myModal"></button>

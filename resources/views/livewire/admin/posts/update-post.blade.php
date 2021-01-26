@@ -17,12 +17,22 @@
                     <form class="form-horizontal" wire:submit.prevent="updatePost">
                         <div class="row">
                             @csrf
-                            <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-sm-12 col-md-8 col-lg-8">
                                 <div class="form-group">
                                     <div class="col-sm-12 col-md-12 col-lg-12">
                                         <input type="text" wire:model="post_title" class="form-control"
                                             id="validationServer01" placeholder="Post Title here" required>
                                         @error('post_title') <span class="text-danger">{{ $message }}</span>@enderror
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="form-group">
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <input type="file" wire:model="feature_image" class="form-control"
+                                            id="validationServer01" placeholder="feature image">
+                                        @error('feature_image') <span class="text-danger">{{ $message }}</span>@enderror
                                     </div>
                                 </div>
                             </div>
@@ -53,16 +63,12 @@
                                     <div wire:ignore id="for-bootstrap-select">
                                         <select class="form-control" wire:model="status" aria-placeholder="please">
                                             <option>choose status</option>
-                                            @php
-                                            use App\Models\Post;
-                                            $posts =Post::get()
-                                            @endphp
-                                            @foreach ($posts as $post)
-                                                <option value="{{ $post->status }}"
-                                                    {{ old('status') == $post->id ? 'selected' : '' }}>
-                                                    {{ $post->status }}
-                                                </option>
-                                            @endforeach
+
+                                            <option value="0" {{ $status == 0 ? 'selected="selected"' : '' }}>
+                                                Deactive
+                                            </option>
+                                            <option value="1" {{ $status == 1 ? 'selected="selected"' : '' }}>
+                                                Active</option>
                                         </select>
                                     </div>
                                     @error('status') <span class="text-danger">{{ $message }}</span>@enderror

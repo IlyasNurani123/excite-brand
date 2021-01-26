@@ -16,7 +16,9 @@ class Banners extends Component
     public $action;
     public $iteration;
     public $selectedItem;
-    protected $listeners = ["delete" => "onDelete"];
+    protected $listeners = [
+        "delete" => "onDelete",
+];
 
     public function render()
     {
@@ -28,14 +30,13 @@ class Banners extends Component
 
     public function mount(){
        
-       
-       
         if(!empty($this->selectedItem)){
 
             $banner = Banner::findOrFail($id);
             $this->image = $banner->image;
             $this->banner_name = $banner->banner_name;
             $this->status = $banner->status;
+           
 
         }
     }
@@ -87,13 +88,14 @@ class Banners extends Component
         $this->resetInputFields();
     }
 
-     /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+    //  /**
+    //  * The attributes that are mass assignable.
+    //  *
+    //  * @var array
+    //  */
     public function edit($id)
     {
+        dd($id);
         $banner = Banner::findOrFail($id);
         $this->image = $banner->image;
         $this->banner_name = $banner->banner_name;

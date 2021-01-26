@@ -35,7 +35,9 @@ class TrashIndex extends Component
 
     public function forceDeletePost()
 {
-    Post::withTrashed()->where('id', $this->selectedItem)->forceDelete();
+   $post= Post::withTrashed()->where('id', $this->selectedItem)->forceDelete();
+    Storage::disk('public')->delete($post->feature_image);
+
     session()->flash('message', 'post delete successfully');
     session()->flash('alert-class', 'alert-danger');
     // return redirect()->route('/post');
