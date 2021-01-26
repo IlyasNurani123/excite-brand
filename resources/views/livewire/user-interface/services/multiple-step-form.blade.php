@@ -11,7 +11,7 @@
             <div class="modal-body">
                 <div>
                     @if (session()->has('message'))
-                        <div class="alert alert-danger">
+                        <div class="alert {{ Session::get('alert-class') }}">
                             {{ session('message') }}
                         </div>
                     @endif
