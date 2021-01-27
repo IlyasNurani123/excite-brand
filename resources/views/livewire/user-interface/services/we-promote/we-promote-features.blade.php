@@ -1,4 +1,4 @@
-<section id="we-ddps-features">
+<section id="we-ddps-features" class="we-promote-bg-image">
     <div class="container-fluid">
         <div class="we-make-brand-caption">
             <h6 class="we-design-title">WE Promote</h6>

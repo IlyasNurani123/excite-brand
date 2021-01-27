@@ -1,4 +1,4 @@
-<section id="we-ddps-features">
+<section id="we-ddps-features" class="we-design-bg-image">
     <div class="container-fluid">
         <div class="we-make-brand-caption">
             <h6 class="we-design-title">WE DEIGN</h6>

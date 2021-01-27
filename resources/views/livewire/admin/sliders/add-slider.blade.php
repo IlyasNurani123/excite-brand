@@ -40,8 +40,7 @@
                             <div class="col-sm-12 col-md-8 col-lg-8">
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">heading</label>
-                                    <input type="text" wire:model="heading" class="form-control" id="recipient-name"
-                                        required>
+                                    <input type="text" wire:model="heading" class="form-control" id="recipient-name">
                                     @error('heading') <span class="text-danger">{{ $message }}</span>@enderror
                                 </div>
                             </div>

@@ -1018,8 +1018,34 @@ p {
 
 #we-ddps-features {
     background: rgba(0, 0, 0, 0.9);
+    /* background-image: url('../../images/bg img frame-5.png'); */
     padding-top: 4rem;
     padding-bottom: 3rem;
+    width: 100%;
+    height: 100%;
+    /* position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1; */
+}
+
+.we-promote-bg-image {
+    background: rgba(5, 57, 25, 0.8) !important;
+    background-image: url('/public/images/bg/bg-img-frame-8.png');
+    width: 100%;
+    height: 100%;
+}
+
+.we-do-bg {
+    background: rgba(8, 0, 28, 0.8) !important;
+    width: 100%;
+    height: 100%;
+}
+
+.we-design-bg-image {
+    background: rgba(8, 3, 48, 0.92) !important;
+    width: 100%;
+    height: 100%;
 }
 
 .we-make-brand-caption h6 {
@@ -1382,9 +1408,18 @@ p {
     padding: 10px;
 }
 
+.banner-image-main-section {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
 .banner-image {
     width: 100%;
-    height: 550px;
+    height: 100%;
 }
 
 .card-img-top {

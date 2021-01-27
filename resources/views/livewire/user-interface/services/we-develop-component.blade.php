@@ -37,7 +37,7 @@
                         <div class="we-devlop-icons">
                             <img class="web-develop-icon" src="{{ asset('images/design icon/web-development.png') }}">
                         </div>
-                        <h5 class="web-develop-title"> Web Development</h5>
+                        <h5 class="web-develop-title"> Software Development</h5>
                         <p class="web-development-description">We as website looks and functions differently depending
                             on what kind of device it’s being
                             accessed from. This means that, although your.</p>

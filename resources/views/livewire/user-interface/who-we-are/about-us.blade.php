@@ -9,9 +9,9 @@
             <img class="banner-image" src="{{ asset('storage/' . $ban->image) }}">
             @break
         @endforeach
-        <div class="banner-description text-align-center">
+        {{-- <div class="banner-description text-align-center">
             <h1 class="banner-title-caption">WHO WE ARE</h1>
-        </div>
+        </div> --}}
     </div>
     @include('livewire.user-interface.who-we-are.we-make-you-brand-talk')
 

@@ -43,9 +43,9 @@ class AddSlider extends Component
      */
     protected $rules = [
         'slider_title' => 'required|string',
-        'heading' => 'required|string',
-        'description' => 'required|string',
-        'button_text' => 'required|string',
+        'heading' => 'Nullable|string',
+        'description' => 'Nullable|string',
+        'button_text' => 'Nullable|string',
         'images' =>'required|image|max:1024'
     ];
 
