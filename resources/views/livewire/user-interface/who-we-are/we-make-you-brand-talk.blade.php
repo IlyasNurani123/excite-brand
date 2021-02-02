@@ -13,7 +13,7 @@
         </div>
         <div class="content-wrapper-define-design">
             <div class="row">
-                <div class="col-sm-12 col-md-5 col-lg-5 offset-md-1 offset-lg-1">
+                <div class="col-sm-12 col-md-6 col-lg-5  offset-lg-1">
                     <div class="define-wrapper">
                         <div class="d-flex">
                             <span class="paper-line-imag"><img src="{{ asset('images/paper-plane 1.png') }}"
@@ -29,11 +29,12 @@
                             Design/Development & Mobile App Development. We will create, optimize and manage your face
                             in the digital world.</p>
                     </div>
+
                 </div>
             </div>
 
             <div class="row design-content">
-                <div class="col-sm-12 col-md-5 col-lg-5 offset-md-6 offset-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-5 offset-md-5 offset-lg-6">
                     <div class="define-wrapper position-relative">
                         <div class="d-flex">
                             <span class="paper-line-imag"><img src="{{ asset('images/paint-brush 1.png') }}"
@@ -53,10 +54,11 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-12 col-md-5 col-lg-5 offset-md-1 offset-lg-1">
+                <div class="col-sm-12 col-md-6 col-lg-5 offset-lg-1">
                     <div class="define-wrapper">
                         <div class="d-flex">
-                            <span class="paper-line-imag"><img src="{{ asset('images/3d-cube 1.png') }}" alt=""></span>
+                            <span class="paper-line-imag-1"><img src="{{ asset('images/3d-cube 1.png') }}"
+                                    alt=""></span>
                             <h5 class="content-title">Build</h5>
                         </div>
                         <p class="define-description">ExciteBrand UK is a UK based company with offices in Pakistan,
@@ -72,10 +74,10 @@
             </div>
 
             <div class="row design-content">
-                <div class="col-sm-12 col-md-5 col-lg-5 offset-md-6 offset-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-5 offset-md-5 offset-lg-6">
                     <div class="define-wrapper position-relative">
                         <div class="d-flex">
-                            <span class="paper-line-imag"><img src="{{ asset('images/push-pin (1) 1.png') }}"
+                            <span class="paper-line-imag-1"><img src="{{ asset('images/push-pin (1) 1.png') }}"
                                     alt=""></span>
                             <h5 class="content-title">Stay</h5>
                         </div>

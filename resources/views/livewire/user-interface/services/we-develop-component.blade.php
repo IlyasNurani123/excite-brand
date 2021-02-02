@@ -8,7 +8,7 @@
                 <div class="col-sm-12 col-md-5 col-lg-5">
                     <div class="web-development">
                         <div class="we-devlop-icons">
-                            <img class="web-develop-icon" src="{{ asset('images/design icon/web-development.png') }}">
+                            <img class="web-develop-icon" src="{{ asset('images/design icon/web-programming-1.png') }}">
                         </div>
                         <h5 class="web-develop-title"> Web Development</h5>
                         <p class="web-development-description">We as website looks and functions differently depending
@@ -21,7 +21,7 @@
                 <div class="col-sm-12 col-md-5 col-lg-5 offeset-md-1 offset-lg-2">
                     <div class="web-development">
                         <div class="we-devlop-icons">
-                            <img class="web-develop-icon" src="{{ asset('images/design icon/web-development.png') }}">
+                            <img class="web-develop-icon" src="{{ asset('images/design icon/mobile-app-2.png') }}">
                         </div>
                         <h5 class="web-develop-title"> App Development</h5>
                         <p class="web-development-description">We as website looks and functions differently depending

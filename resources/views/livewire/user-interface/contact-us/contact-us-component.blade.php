@@ -56,8 +56,11 @@
                                 </div>
                                 <div class="form-group">
                                     <button class="contact-form-submit-btn" type="submi"
-                                        wire:loading.attr="disabled">Send Message</button>
-
+                                        wire:loading.attr="disabled">Send Message
+                                        <span wire:loading wire:target="submitContactUsForm">
+                                            <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+                                        </span>
+                                    </button>
                                 </div>
                             </form>
                         </div>

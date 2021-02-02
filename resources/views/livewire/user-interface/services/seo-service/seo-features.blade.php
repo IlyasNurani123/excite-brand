@@ -1,7 +1,7 @@
 <section id="seo-feature">
     <div class="row-wrapper-seo-feature">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="card card-effect px-4">
                     <div class="card-body card-body-wrapper">
                         <h3 class="seo-services-title">
@@ -19,7 +19,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-6 ">
+            <div class="col-lg-4 col-md-4 col-sm-12 ">
                 <div class="card card-effect">
                     <div class="card-body card-body-wrapper">
                         <h3 class="seo-services-title">
@@ -37,7 +37,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-6 ">
+            <div class="col-lg-4 col-md-4 col-sm-12 ">
                 <div class="card card-effect">
                     <div class="card-body card-body-wrapper">
                         <h3 class="seo-services-title">

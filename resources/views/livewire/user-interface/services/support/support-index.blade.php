@@ -9,10 +9,9 @@
             <img class="banner-image" src="{{ asset('storage/' . $ban->image) }}">
             @break
         @endforeach
-        <div class="banner-description text-align-center">
+        {{-- <div class="banner-description text-align-center">
             <h1>Our Support</h1>
-            {{-- <h6></h6> --}}
-        </div>
+        </div> --}}
     </div>
     @livewire('user-interface.services.support.support-feature')
     @livewire('user-interface.services.support.support-detail-description')

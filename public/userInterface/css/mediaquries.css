@@ -6,9 +6,37 @@
     }
 }
 
-@media(min-width: 768px) and (max-width: 1025px) {
+@media(min-width: 1020px) and (max-width: 1280px) {
     .our-work-grid-wrapper {
-        height: 25rem !important;
+        height: 33rem !important;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1025px) {
+    .element1-img {
+        display: none;
+    }
+    .element-img {
+        display: none;
+    }
+    .grid-container-our-experties {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 1rem;
+        /* grid-template-areas: 'gird-div gird-div gird-div'; */
+    }
+    .grid-container-our-experties .gird-div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid black;
+        text-align: center;
+        font-size: 30px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .our-work-grid-wrapper {
+        height: 23rem !important;
     }
     #seo-feature .card {
         width: 100%;
@@ -28,11 +56,60 @@
     }
 }
 
+@media only screen and (max-width: 750px) {
+    .grid-container-our-experties {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 1rem;
+        /* grid-template-areas: 'gird-div gird-div gird-div'; */
+    }
+    .grid-container-our-experties .gird-div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid black;
+        text-align: center;
+        font-size: 30px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
 @media(min-width: 320px) and (max-width: 767px) {
     /*******************What We Do Section***********************8*/
+    .navbar .nav-item.active {
+        border-bottom: none;
+        border-bottom-width: none;
+    }
+    .element1-img {
+        display: none;
+    }
+    .element-img {
+        display: none;
+    }
+    #contact-us-form {
+        margin-top: 50px;
+    }
+    .contact-form {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    button.newsletter-form-submit-btn {
+        margin-top: 11px;
+    }
+    #testimonial .fa.fa-arrow-circle-right {
+        font-size: 40px;
+        margin-left: 68px;
+        color: #FFFFFF;
+    }
+    #testimonial .fa.fa-arrow-circle-left {
+        font-size: 40px;
+        margin-right: 68px;
+        color: #FFFFFF;
+    }
     .client-testimonial-name {
-        padding-top: 0px;
-        /* margin-top: -30px !important; */
+        /* padding-top: 0px;
+        margin-top: -30px !important; */
     }
     #testimonial .carousel-inner {
         position: relative;
@@ -65,7 +142,7 @@
         line-height: 66px;
     }
     .we-are-a-landing p {
-        text-align: center;
+        text-align: left;
     }
     .landing-red-more-btn {
         display: flex;
@@ -89,7 +166,10 @@
         font-size: -67px;
     }
     .we-do-img {
-        display: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .we-do p {
         text-align: center;
@@ -267,9 +347,49 @@
     .icon-box {
         margin: 0px;
     }
+    .navbar .nav-item.active {
+        border-bottom: none;
+        border-bottom-width: none;
+    }
 }
 
 @media(min-width: 320px) and (max-width: 575px) {
+    .what-we-do-icon-dp {
+        display: none;
+    }
+    .what-we-do-icon {
+        display: none;
+    }
+    .we-make-brand-caption h6 {
+        font-size: 20px;
+        text-decoration-thickness: 1px;
+        padding-bottom: 2px;
+    }
+    .navbar-nav {
+        background-color: #000000;
+    }
+    .paper-line-imag-1 {
+        display: none;
+    }
+    .paper-line-imag {
+        display: none;
+    }
+    #why-excite-brand .card .card-body {
+        padding: 0rem;
+    }
+    .element-img {
+        display: none;
+    }
+    .element1-img {
+        display: none;
+    }
+    .design-content {
+        margin-left: 0px;
+    }
+    #we-make-you-brand {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 14px;
+    }
     .our-work-grid-wrapper {
         height: 100% !important;
     }
@@ -286,5 +406,32 @@
     }
     .row-wrapper-seo-feature {
         text-align: -webkit-center;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 500px) {
+    .grid-container-our-experties {
+        padding-top: 30px;
+        grid-gap: 0rem;
+    }
+    .gird-div {
+        width: 80px;
+        height: 80px;
+    }
+    .carousel-caption {
+        position: absolute;
+        margin: 0px;
+        right: 0%;
+        left: 0%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #testimonial {
+        height: 800px;
+    }
+    .customer-love-us-icon-box {
+        width: 150px;
+        height: 150px;
+        text-align: center;
     }
 }

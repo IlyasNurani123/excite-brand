@@ -46,4 +46,9 @@ class Post extends Model
         return $this->belongsTo(Catagory::class);
     }
    
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d',
+   
+    ];
+  
 }
