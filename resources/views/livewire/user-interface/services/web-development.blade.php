@@ -17,5 +17,4 @@
     @include('livewire.user-interface.services.we-develop-component')
     @include('livewire.user-interface.services.web-developmet-detail-component')
     @livewire('user-interface.lets-talk')
-    @livewire('user-interface.newsletters')
 </div>

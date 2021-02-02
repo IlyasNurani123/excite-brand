@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Admin\Posts;
 
 use App\Models\Post;
 use Livewire\Component;
+use Illuminate\Support\Facades\Storage;
 
 class TrashIndex extends Component
 {
@@ -35,7 +36,7 @@ class TrashIndex extends Component
 
     public function forceDeletePost()
 {
-   $post= Post::withTrashed()->where('id', $this->selectedItem)->forceDelete();
+   $post= Post::withTrashed()->find($this->selectedItem)->forceDelete();
     Storage::disk('public')->delete($post->feature_image);
 
     session()->flash('message', 'post delete successfully');

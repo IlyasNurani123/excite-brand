@@ -1,45 +1,34 @@
-<section id="blog">
-    <div class="banner">
-        @php
-        $banner = App\Models\Banner::where('status',1)
-        ->Where('banner_name','our news and blog')
-        ->get();
-        @endphp
-        @foreach ($banner as $ban)
-            <img class="banner-image" src="{{ asset('storage/' . $ban->image) }}">
-            @break
-        @endforeach
-        <div class="banner-description text-align-center">
-            {{-- <h1>Our Blog And News</h1> --}}
-            {{-- <h6></h6> --}}
-        </div>
-    </div>
-    <div class="container container-wrapper">
-        <div class=" row blog-title">
-            <div class="blog-title">
-                <h3></h3>
-            </div>
-        </div>
-        <div class="row">
+<section id="our-portfolio-detail">
 
-            <div class="col-sm-12 col-md-5 col-lg-5">
-                <div class="feature-image-detail">
-                    <img src="{{ asset('storage/' . $post[0]->feature_image) }}" height="250">
-                </div>
-                <small class="m-3"> <strong>Admin {{ $post[0]->created_at }}</strong></small>
+    <div class="container">
+        <div class="our-portfolio-detail post-title">
+            <h1 class="post-title">{{ $post[0]->post_title }}</h1>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                @if (!empty($post[0]->feature_image))
+                    <div class="feature-image-detail">
+                        <img src="{{ asset('storage/' . $post[0]->feature_image) }}" height="250">
+                    </div>
+                @endif
             </div>
-            <div class="col-sm-12 col-md-7 col-lg-7">
-                <div class="post-title pt-3">
+            <div class="col-sm-12 col-md-8 col-lg-8 ">
+                {{-- <div class="post-title pt-3 text-white">
                     <h3>{{ $post[0]->post_title }}</h3>
+                </div> --}}
+
+                <div>
+                    <h6 class="m-3 text-white"><b><span>Category : </span><a
+                                href="{{ route('post-by-category', ['category' => $post[0]->catagory->slug]) }}">{{ $post[0]->catagory->name }}</a></b>
+                    </h6>
                 </div>
 
-                <div>{{ $post[0]->catagory->name }}</div>
-
-                <div class="time-date pt-3">
-                    <strong>{{ $post[0]->created_at }}</strong>
+                <div class="time-date pt-3 text-white">
+                    <span><b>ExciteBrand Admin /</b></span>
+                    <strong>{{ $post[0]->created_at->toDateString() }}</strong>
                 </div>
 
-                <div class="post-description">
+                <div class="post-description text-white">
                     {!! $post[0]->article !!}
                 </div>
             </div>

@@ -3,151 +3,144 @@
         <div class="seo-services-title">
             <h1 class="our-seo-title">OUR SEO EXPERTISE</h1>
         </div>
-        <div class="row py-5">
+        <div class="grid-container-our-experties">
 
-            <div class="col-lg-2 col-md-4 col-sm-4 offset-lg-1 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/rocket-ship 1.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>SEO Consultation</h5>
+                    <p>SEO Consultation</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/lightbulb 1.png') }}" class="" alt="">
+                </div>
+                <div class="our-expertise-icon-title">
+                    <p>SEO Strategy </p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/shopping-cart (2) 1.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>SEO Strategy </h5>
+                    <p>Ecommerce SEO</p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/globe 1.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>Ecommerce SEO</h5>
+                    <p>International SEO</p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/flag 1.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>International SEO</h5>
+                    <p>National Business SEO</p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/placeholder 1.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>National Business SEO</h5>
+                    <p>Local Business SEO</p>
                 </div>
             </div>
 
-        </div>
-
-        <div class="row py-3">
-
-            <div class="col-lg-2 col-md-4 col-sm-4 offset-lg-1 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/lead generation.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>SEO Consultation</h5>
+                    <p>Lead Generation SEO </p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/youtube.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>SEO Strategy </h5>
+                    <p>Youtube SEO </p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/mobile-phone 1.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>Ecommerce SEO</h5>
+                    <p>Mobile SEO</p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/apps 1.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>International SEO</h5>
+                    <p>APP OPTIMISATION </p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/cogs 1.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>National Business SEO</h5>
+                    <p>Conversion Rate Optimisation </p>
                 </div>
             </div>
 
-        </div>
-
-        <div class="row py-3">
-
-            <div class="col-lg-2 col-md-4 col-sm-4 offset-lg-1 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/data-analysis 1.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>SEO Consultation</h5>
+                    <p>SEO Analytics</p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/document 1.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>SEO Strategy </h5>
+                    <p>SEO Audits </p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/link 1.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>Ecommerce SEO</h5>
+                    <p>Link Clean Up </p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
+            <div class="grid-item">
+                <div class="gird-div">
+                    <img src="{{ asset('images/design icon/SEo.png') }}" class="" alt="">
                 </div>
                 <div class="our-expertise-icon-title">
-                    <h5>International SEO</h5>
+                    <p>Technical SEO </p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-4 our-expertise-icon-wrapper">
-                <div class="our-experties-icon">
-                    <img src="{{ asset('images/ppcImg1.gif') }}" class="rounded-circle" alt="">
-                </div>
-                <div class="our-expertise-icon-title">
-                    <h5>National Business SEO</h5>
-                </div>
-            </div>
-
+            {{-- end grid container --}}
         </div>
 
         <div class="seo-services-button text-center py-5">

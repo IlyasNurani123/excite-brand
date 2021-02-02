@@ -9,8 +9,9 @@
                         we work with some of the UKs leading brands, delevireing professional and intuive search
                         advertising and SEO solutions. We don't
                         believed in second best-and neither should you.</p>
-                    <div class="landing-red-more-btn text-align-center"><button type="button"
-                            class="btn btn-outline-secondary custom-button">Read More</button></div>
+                    <div class="landing-red-more-btn text-align-center"><a type="button"
+                            href="{{ route('who-we-are') }}" class="btn btn-outline-secondary custom-button">Read
+                            More</a></div>
                 </div>
             </div>
             {{-- <div class="col-sm-12 col-md-6 col-lg-3">
@@ -24,7 +25,8 @@
                     <p class="custom-paragraph">We offer full-services pertaining to social media management whih
                         includes Social Media Strategy Creation, Graphic Design, Photography
                     </p>
-                    <div class="offer-services-btn"><button type="button" class="btn custom-button ">Read More</button>
+                    <div class="offer-services-btn"><a type="button" href="{{ route('what-we-do') }}"
+                            class="btn custom-button ">Read More</a>
                     </div>
                 </div>
             </div>

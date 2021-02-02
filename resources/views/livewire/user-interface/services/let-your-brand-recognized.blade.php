@@ -14,7 +14,7 @@
         </div>
 
         <div class="content-wrapper-define-design ">
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-sm-12 col-md-5 col-lg-5 offset-md-1 offset-lg-1">
                     <div class="define-wrapper">
                         <div class="wraper-img-ddps-text">
@@ -26,25 +26,31 @@
                             As an approved Google AdWords partner, we work with some of the UKs leading brands,
                             delivering professional and intuitive search advertising and SEO solutions.</p>
                     </div>
+                    <div class=""><a type="button" href="{{ route('we-design') }}"
+                            class="btn btn-outline-secondary custom-button services-btn">Read
+                            More</a></div>
                 </div>
             </div>
 
-            <div class="row design-content">
+            <div class="row design-content mb-3">
                 <div class="col-sm-12 col-md-5 col-lg-5 offset-md-6 offset-lg-6">
                     <div class="define-wrapper position-relative">
                         <div class="wraper-img-ddps-text">
                             <span class=" what-we-do-icon"><img
-                                    src="{{ asset('images/design icon/web-programming 1.png') }}" alt=""></span>
+                                    src="{{ asset('images/design icon/web-programming-1.png') }}" alt=""></span>
                             <h5 class="content-title d-inline">We Develop</h5>
                         </div>
                         <p class="define-description">At ExciteBrand we don’t just promise the world – we deliver.
                             As an approved Google AdWords partner, we work with some of the UKs leading brands,
                             delivering professional and intuitive search advertising and SEO solutions... </p>
                     </div>
+                    <div class=""><a type="button" href="{{ route('we-develop') }}"
+                            class="btn btn-outline-secondary custom-button services-btn">Read
+                            More</a></div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-sm-12 col-md-5 col-lg-5 offset-md-1 offset-lg-1">
                     <div class="define-wrapper">
                         <div class="wraper-img-ddps-text">
@@ -56,10 +62,14 @@
                             approved Google AdWords partner, we work with some of the UKs leading brands, delivering
                             professional and intuitive search advertising and SEO solutions. </p>
                     </div>
+
+                    <div class=""><a type="button" href="{{ route('we-promote') }}"
+                            class="btn btn-outline-secondary custom-button services-btn">Read
+                            More</a></div>
                 </div>
             </div>
 
-            <div class="row design-content">
+            <div class="row design-content mb-3">
                 <div class="col-sm-12 col-md-5 col-lg-5 offset-md-6 offset-lg-6">
                     <div class="define-wrapper position-relative">
                         <div class="wraper-img-ddps-text">
@@ -71,6 +81,9 @@
                             approved Google AdWords partner, we work with some of the UKs leading brands, delivering
                             professional and intuitive search advertising and SEO solutions. </p>
                     </div>
+                    <div class=""><a type="button" href="{{ route('we-support') }}"
+                            class="btn btn-outline-secondary custom-button services-btn">Read
+                            More</a></div>
                 </div>
             </div>
         </div>

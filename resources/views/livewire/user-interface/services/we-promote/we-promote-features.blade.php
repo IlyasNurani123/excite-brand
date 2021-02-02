@@ -8,7 +8,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="web-development">
                         <div class="we-devlop-icons">
-                            <img class="web-develop-icon" src="{{ asset('images/design icon/web-development.png') }}">
+                            <img class="web-develop-icon" src="{{ asset('images/design icon/SEO.png') }}">
                         </div>
                         <h5 class="web-develop-title">Search Engine Optimization</h5>
                         <p class="web-development-description">We as website looks and functions differently depending
@@ -19,7 +19,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="web-development">
                         <div class="we-devlop-icons">
-                            <img class="web-develop-icon" src="{{ asset('images/design icon/web-development.png') }}">
+                            <img class="web-develop-icon" src="{{ asset('images/design icon/adwords.png') }}">
                         </div>
                         <h5 class="web-develop-title">Google Ads <br> Management</h5>
                         <p class="web-development-description">We as website looks and functions differently depending
@@ -31,7 +31,8 @@
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="web-development">
                         <div class="we-devlop-icons">
-                            <img class="web-develop-icon" src="{{ asset('images/design icon/web-development.png') }}">
+                            <img class="web-develop-icon"
+                                src="{{ asset('images/design icon/social-media-marketing.png') }}">
                         </div>
                         <h5 class="web-develop-title"> Social Media<br> Marketing</h5>
                         <p class="web-development-description">We as website looks and functions differently depending
@@ -45,7 +46,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="web-development">
                         <div class="we-devlop-icons">
-                            <img class="web-develop-icon" src="{{ asset('images/design icon/web-development.png') }}">
+                            <img class="web-develop-icon" src="{{ asset('images/design icon/facebook ads.png') }}">
                         </div>
                         <h5 class="web-develop-title"> Facebook Ads<br> Management</h5>
                         <p class="web-development-description">We as website looks and functions differently depending
@@ -57,7 +58,8 @@
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="web-development">
                         <div class="we-devlop-icons">
-                            <img class="web-develop-icon" src="{{ asset('images/design icon/web-development.png') }}">
+                            <img class="web-develop-icon"
+                                src="{{ asset('images/design icon/social media management.png') }}">
                         </div>
                         <h5 class="web-develop-title">Social Media<br> Management</h5>
                         <p class="web-development-description">We as website looks and functions differently depending
@@ -70,7 +72,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="web-development">
                         <div class="we-devlop-icons">
-                            <img class="web-develop-icon" src="{{ asset('images/design icon/web-development.png') }}">
+                            <img class="web-develop-icon" src="{{ asset('images/design icon/lead generation.png') }}">
                         </div>
                         <h5 class="web-develop-title">Lead<br> Generation</h5>
                         <p class="web-development-description">We as website looks and functions differently depending
@@ -84,7 +86,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4 offset-md-4 0ffset-lg-4">
                     <div class="web-development">
                         <div class="we-devlop-icons">
-                            <img class="web-develop-icon" src="{{ asset('images/design icon/web-development.png') }}">
+                            <img class="web-develop-icon" src="{{ asset('images/design icon/email marketting.png') }}">
                         </div>
                         <h5 class="web-develop-title">Email Marketing</h5>
                         <p class="web-development-description">We as website looks and functions differently depending

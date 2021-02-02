@@ -56,11 +56,9 @@ class AddPost extends Component
      * @var array[]
      */
     protected $rules = [
-
             'post_title' => 'required|string|max:255',
             'article' => 'required | string',
-            'feature_image' => 'nullable |image'
-
+            'feature_image' => 'nullable |image',
     ];
     
        /**

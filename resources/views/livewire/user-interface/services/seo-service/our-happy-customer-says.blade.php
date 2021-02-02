@@ -12,7 +12,7 @@
             </div>
         </div>
     </div>
-    <div class="container-about-happy-client" id="seo-feature" style="padding-left: 4rem">
+    <div class="container-about-happy-client" id="seo-feature">
         <div class="row-wrapper-seo-feature">
             <div class="customer-review-title my-4">
                 <div class="seo-services-title text-center">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="card card-effect px-4">
                         <div class="card-body card-body-wrapper">
                             <a href="#">Link</a>
@@ -32,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
                     <div class="card card-effect">
                         <div class="card-body card-body-wrapper">
                             <a href="#" class="customer-web-link">Link</a>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
                     <div class="card card-effect">
                         <div class="card-body card-body-wrapper">
                             <a href="#" class="customer-web-link">Link</a>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="card card-effect px-4">
                         <div class="card-body card-body-wrapper">
                             <a href="#" class="customer-web-link">Link</a>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
                     <div class="card card-effect">
                         <div class="card-body card-body-wrapper">
                             <a href="#" class="customer-web-link">Link</a>
@@ -79,7 +79,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
                     <div class="card card-effect">
                         <div class="card-body card-body-wrapper">
                             <a href="#" class="customer-web-link">Link</a>

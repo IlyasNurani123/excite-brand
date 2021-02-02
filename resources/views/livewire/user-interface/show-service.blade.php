@@ -8,7 +8,7 @@
     </div>
     <div class="row service-container m-0">
         <div class="col-sm-12 col-md-5 col-lg-5 p-0">
-            <div class="service-image"> <img src="{{ asset('images/services.png') }}" alt="">
+            <div class="service-image"> <img src="{{ asset('images/bg/our-service-side.png') }}" alt="">
             </div>
         </div>
         <div class="col-sm-12 col-md-7 col-lg-7">

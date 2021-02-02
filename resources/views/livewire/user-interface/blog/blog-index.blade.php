@@ -1,4 +1,4 @@
-<section id="blog">
+<section id="blog" class="blog-class">
     <div class="banner">
         @php
         $banner = App\Models\Banner::where('status',1)
@@ -15,34 +15,37 @@
         </div>
     </div>
     <div class="container container-wrapper">
-        <div class=" row blog-title">
-            <div class="blog-title text-center">
+        <div class="row">
+            <div class="blog-title">
                 <h3 class="">Most Recent</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-7 col-lg-7 offset-md-1 offset-lg-1">
-                @foreach ($posts as $post)
+            <div class="col-sm-6 col-md-8 col-lg-8">
+                {{-- @foreach ($posts as $post) --}}
 
                     <div class="card mb-4 post-caption">
+                        @if(!empty($recent->feature_image))
                         <div class="feature-image">
-                            <img class="" src="{{ asset('storage/' . $post->feature_image) }}"
+                            <img class="" src="{{ asset('storage/' . $recent->feature_image) }}"
                             alt="Card image cap">
                         </div>
-                        <div class="card-body post-title">
-                            <small class="m-3"><a href="{{ route('post-by-category', ['category' => $post->catagory->slug ]) }}">{{ $post->catagory->name }}</a></small><br>
-                            <small class="m-3"> <strong>Admin {{$post->created_at}}</strong></small>
-                            <h5 class="card-title">{{ $post->post_title }}</h5>
-                            <div class="card-text post-description mb-4"> {!!
-                                Illuminate\Support\Str::limit($post->article, 400) !!}</div>
+                        @endif
+                        <div class="card-body">
+                            <h6 class="m-3"><b><a href="{{ route('post-by-category', ['category' => $recent->catagory->slug ]) }}">{{ $recent->catagory->name }}</a></b></h6>
+                          <span><b>By ExciteBrand Admin</b> </span>       <small class="m-3"><b> {{$recent->created_at->toDateString() }}</b></small>
+                            <h5 class="card-title">{{ $recent->post_title }}</h5>
+                            <div class="card-text post-description-detail mb-4"> {!!
+                               $recent->article  !!}</div>
                            
-                            <a href="{{ route('details', ['slug' => $post->slug]) }}" class="btn btn-primary">read
+                            <a href="{{ route('details', ['slug' => $recent->slug]) }}" class="btn btn-primary">read
                                 more</a>
                         </div>
                     </div>
-                @endforeach
+                    {{-- @break
+                @endforeach --}}
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-4 col-md-4 col-lg-4">
                 <div class="card">
                     <div class="card-header">
                         <h3 class="text-center">Catagories</h3>
@@ -62,7 +65,42 @@
                     </div>
                 </div>
             </div>
+        
         </div>
+        <div class="blog-grid">
+            @foreach ($posts->chunk(3) as $post)
+                           
+            <div class="row">
+                @foreach ( $post as $p )
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{{ asset('storage/' . $p->feature_image) }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="m-3"><b><a href="{{ route('post-by-category', ['category' => $p->catagory->slug ]) }}">{{ $p->catagory->name }}</a></b></h6>
+                            <span><b>By ExciteBrand Admin</b> </span>       <small class="m-3"><b> {{$p->created_at->toDateString() }}</b></small>
+                          <h5 class="card-title">{{$p->post_title}}</h5>
+                          <div class="card-text post-description-detail mb-4">
+                                    <div> {!!
+                                        $p->article !!}
+                                        
+                                    </div>
+                          </div>
+                                 
+                       <div class="text-center">
+
+                           <a href="{{ route('details', ['slug' => $p->slug]) }}" class="btn custom-button">read
+                               more</a>
+                       </div>
+                        </div>
+                      </div>
+                </div>
+                @endforeach
+            </div>
+            @endforeach
+        </div>
+
+
+    
         <div>
             {{ $posts->links() }}
         </div>

@@ -16,7 +16,8 @@ class BlogIndex extends Component
     public function render()
     {
         $posts = Post::with("catagory")->where('status', true)->latest()->paginate(5);
+        $recent =$posts[0];
         $catagories = Catagory::paginate(20);
-        return view('livewire.user-interface.blog.blog-index',compact('posts','catagories'))->layout('layouts.guest');
+        return view('livewire.user-interface.blog.blog-index',compact('posts','catagories','recent'))->layout('layouts.guest');
     }
 }

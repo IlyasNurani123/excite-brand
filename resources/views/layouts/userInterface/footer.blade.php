@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="about-company-footer">
-                    <h5 class="logo"><span class="excite-brand">EB</span>
-                        Excitebrand
+                    <h5 class="logo">
+                        EB
                     </h5>
                     <p class="about-company-details my-4">
                         Excitebrand is a UK based registered with a passion to deliver the proven digital marketing &

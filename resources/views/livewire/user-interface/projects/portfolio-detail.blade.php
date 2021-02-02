@@ -1,8 +1,12 @@
-<section id="our-work-detail">
+<section id="our-portfolio-detail">
 
     <div class="container">
 
-        <div class="our-work-grid-wrapper">
+        <div class="our-portfolio-detail">
+            <h1 class="portfolio-title">OUR WORK</h1>
+        </div>
+
+        <div class="portfolio-work-wrapper card p-3">
             <div class="">
                 @foreach ($portfolio->chunk(3) as $chunk)
                     <div class="row py-3">
